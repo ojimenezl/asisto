@@ -12,21 +12,21 @@ if($connect!=null && $codigoqr!=null){
   echo'<script> alert("Conectado")</script>';
 
   
-  $UsuarioDato=$_POST["dataUsuario"];
-  $NombreDato=$_POST["dataNombre"];
-  $DeparDato=$_POST["dataDepar"];
-  $NaciDato=$_POST["dataNaci"];
-  $CedulaDato=$_POST["dataCedula"];
+//   $UsuarioDato=$_POST["dataUsuario"];
+//   $NombreDato=$_POST["dataNombre"];
+//   $DeparDato=$_POST["dataDepar"];
+//   $NaciDato=$_POST["dataNaci"];
+//   $CedulaDato=$_POST["dataCedula"];
   $req=$_REQUEST['ingresar'];
-  echo '<script>  alert($codigoqr) </script>';
-  echo '<script>  alert($UsuarioDato) </script>';
-  echo '<script> alert($NombreDato) </script>';
-  echo '<script> alert($DeparDato) </script>';
-  echo '<script> alert($NaciDato) </script>';
-  echo '<script> alert($CedulaDato) </script>';
+  //echo '<script>  alert($codigoqr) </script>';
+  //echo '<script>  alert($UsuarioDato) </script>';
+//   echo '<script> alert($NombreDato) </script>';
+//   echo '<script> alert($DeparDato) </script>';
+//   echo '<script> alert($NaciDato) </script>';
+//   echo '<script> alert($CedulaDato) </script>';
 
   if($codigoqr!=null ){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
-   guardarDatos($NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
+   guardarDatos($codigoqr,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
