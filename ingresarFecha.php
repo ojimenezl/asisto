@@ -42,11 +42,11 @@ if($connect!=null && $codigoqr!=null){
 function guardarDatos($codigoqr,$req,$connect){
   if(isset($req)){
 
-  $BBDNombre=$codigoqr;
-  $BBDUsuario=$UsuarioDato;
-  $BBDDepar=$DeparDato;
-  $BBDNaci=$NaciDato;
-  $BBDCedula=$CedulaDato;
+  //$BBDNombre=$codigoqr;
+  //$BBDUsuario=$UsuarioDato;
+  //$BBDDepar=$DeparDato;
+  //$BBDNaci=$NaciDato;
+  //$BBDCedula=$CedulaDato;
   //$consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
     
   
