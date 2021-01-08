@@ -24,7 +24,7 @@ if($connect!=null && $codigoqr!=null){
   echo $DeparDato; 
   echo $NaciDato;
   echo $CedulaDato;
-  echo "aqui2"
+  echo "aqui2";
   if($codigoqr!=null && $NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
