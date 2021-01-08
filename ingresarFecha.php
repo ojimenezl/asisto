@@ -11,9 +11,9 @@ header('Location: http://localhost/codigoQRUser.php');
 if($connect!=null && $codigoqr!=null){
   echo'<script> alert("Conectado")</script>';
 
-  
-  $UsuarioDato=$_POST["dataUsuario"];
-  $NombreDato=$_POST["dataNombre"];
+//   $UsuarioDato=$codigoqr;
+//   $UsuarioDato=$_POST["dataUsuario"];
+//   $NombreDato=$_POST["dataNombre"];
 //   $DeparDato=$_POST["dataDepar"];
 //   $NaciDato=$_POST["dataNaci"];
 //   $CedulaDato=$_POST["dataCedula"];
@@ -26,7 +26,7 @@ if($connect!=null && $codigoqr!=null){
 //   echo '<script> alert($CedulaDato) </script>';
 
   if($codigoqr!=null && $NombreDato!=null ){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
-   guardarDatos($codigoqr,$NombreDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
+   guardarDatos($codigoqr,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
@@ -39,15 +39,15 @@ if($connect!=null && $codigoqr!=null){
 }
 
 
-function guardarDatos($codigoqr,$NombreDato,$req,$connect){
+function guardarDatos($codigoqr,$req,$connect){
   if(isset($req)){
 
-  $BBDNombre=$NombreDato;
+//   $BBDNombre=$NombreDato;
   $BBDUsuario=$codigoqr;
 //   $BBDDepar=$DeparDato;
 //   $BBDNaci=$NaciDato;
 //   $BBDCedula=$CedulaDato;
-  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('$BBDUsuario','$BBDNombre', '9', '9', '9', '2021-01-08 02:00:00')";
+  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('$BBDUsuario','9', '9', '9', '9', '2021-01-08 02:00:00')";
     
   
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
