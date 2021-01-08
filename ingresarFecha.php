@@ -43,7 +43,7 @@ function guardarDatos($codigoqr,$req,$connect){
   //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
     
   //$consulta="INSERT INTO usuario (usuario) VALUES ('$BBDNombre')";
-  $consulta="INSERT INTO `usuario`(`nombre`) VALUES ('$BBDNombre')";
+  $consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
   $ejecutar=mysqli_query($connect,$consulta);
 
   if($ejecutar){
