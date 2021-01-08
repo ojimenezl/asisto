@@ -19,11 +19,11 @@ if($connect!=null && $codigoqr!=null){
   $CedulaDato=$_POST["dataCedula"];
   $req=$_REQUEST['ingresar'];
  
-  echo '<script>  alert("$UsuarioDato") </script>';
-  echo '<script> alert("$NombreDato") </script>';
-  echo '<script> alert("$DeparDato") </script>';
-  echo '<script> alert("$NaciDato") </script>';
-  echo '<script> alert("$CedulaDato") </script>';
+  echo '<script>  alert($UsuarioDato) </script>';
+  echo '<script> alert($NombreDato) </script>';
+  echo '<script> alert($DeparDato) </script>';
+  echo '<script> alert($NaciDato) </script>';
+  echo '<script> alert($CedulaDato) </script>';
 
   if($codigoqr!=null && $NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
