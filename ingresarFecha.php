@@ -14,10 +14,10 @@ if($connect!=null && $codigoqr!=null){
   
   $UsuarioDato=$_POST["dataUsuario"];
   $NombreDato=$_POST["dataNombre"];
-  $DeparDato=$_POST["dataDepar"];
-  $NaciDato=$_POST["dataNaci"];
-  $CedulaDato=$_POST["dataCedula"];
-  $req=$_REQUEST['ingresar'];
+//   $DeparDato=$_POST["dataDepar"];
+//   $NaciDato=$_POST["dataNaci"];
+//   $CedulaDato=$_POST["dataCedula"];
+//   $req=$_REQUEST['ingresar'];
   //echo '<script>  alert($codigoqr) </script>';
   //echo '<script>  alert($UsuarioDato) </script>';
 //   echo '<script> alert($NombreDato) </script>';
@@ -25,13 +25,13 @@ if($connect!=null && $codigoqr!=null){
 //   echo '<script> alert($NaciDato) </script>';
 //   echo '<script> alert($CedulaDato) </script>';
 
-  if($codigoqr!=null && $NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
-   guardarDatos($codigoqr,$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
+  if($codigoqr!=null && $NombreDato!=null ){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
+   guardarDatos($codigoqr,$NombreDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
-//    $fh = fopen($txt, "w") or die("Error al crear");
-//    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
-//    fwrite($fh, $texto);
-//    fclose($fh);
+   $fh = fopen($txt, "w") or die("Error al crear");
+   $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
+   fwrite($fh, $texto);
+   fclose($fh);
   }
 
 }else{
@@ -39,15 +39,15 @@ if($connect!=null && $codigoqr!=null){
 }
 
 
-function guardarDatos($codigoqr,$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect){
+function guardarDatos($codigoqr,$NombreDato,$req,$connect){
   if(isset($req)){
 
-  $BBDNombre=$$NombreDato;
-  $BBDUsuario=$UsuarioDato;
-  $BBDDepar=$DeparDato;
-  $BBDNaci=$NaciDato;
-  $BBDCedula=$CedulaDato;
-  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci', '2021-01-08 02:00:00')";
+  $BBDNombre=$NombreDato;
+  $BBDUsuario=$codigoqr;
+//   $BBDDepar=$DeparDato;
+//   $BBDNaci=$NaciDato;
+//   $BBDCedula=$CedulaDato;
+  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('$BBDUsuario','$BBDNombre', '9', '9', '9', '2021-01-08 02:00:00')";
     
   
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
