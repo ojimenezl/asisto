@@ -1,7 +1,7 @@
 <?php
 include "index.php";
 
-$connect=mysqli_connect('localhost','root','1234m','asisto');
+$connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 $codigoqr=$_POST["msg2"];
 $txt="userLoadPC.txt";
 if(file_exists($txt)){
