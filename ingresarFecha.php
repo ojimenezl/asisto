@@ -41,7 +41,9 @@ function guardarDatos($codigoqr,$req,$connect){
   //$BBDNaci=$NaciDato;
   //$BBDCedula=$CedulaDato;
   //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
-  $consulta="INSERT INTO usuario (usuario) VALUES ('$BBDNombre')";
+    
+  //$consulta="INSERT INTO usuario (usuario) VALUES ('$BBDNombre')";
+  $consulta="INSERT INTO `usuario`(`nombre`) VALUES ('$BBDNombre')";
   $ejecutar=mysqli_query($connect,$consulta);
 
   if($ejecutar){
