@@ -28,10 +28,10 @@ if($connect!=null && $codigoqr!=null){
   if($codigoqr!=null && $NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($codigoqr,$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
-   $fh = fopen($txt, "w") or die("Error al crear");
-   $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
-   fwrite($fh, $texto);
-   fclose($fh);
+//    $fh = fopen($txt, "w") or die("Error al crear");
+//    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
+//    fwrite($fh, $texto);
+//    fclose($fh);
   }
 
 }else{
