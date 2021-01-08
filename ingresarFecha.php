@@ -18,11 +18,13 @@ if($connect!=null && $codigoqr!=null){
   $NaciDato=$_POST["dataNaci"];
   $CedulaDato=$_POST["dataCedula"];
   $req=$_REQUEST['ingresar'];
+  echo "aqui";
   echo  $UsuarioDato; 
   echo $NombreDato;
   echo $DeparDato; 
   echo $NaciDato;
   echo $CedulaDato;
+  echo "aqui2"
   if($codigoqr!=null && $NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
