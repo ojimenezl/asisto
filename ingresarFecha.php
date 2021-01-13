@@ -12,16 +12,16 @@ $txt="userLoadPC.txt";
 
 
 //no
-// if (isset($_GET["w1"])) {
-//     // asignar w1 y w2 a dos variables
-//     $lond = $_GET["w1"];
-//     $latd = $_GET["w2"];
+if (isset($_GET["w1"])) {
+    // asignar w1 y w2 a dos variables
+    $lond = $_GET["w1"];
+    $latd = $_GET["w2"];
  
-//     // mostrar $phpVar1 y $phpVar2
-//     echo '<script> alert("Ubicacion listo")</script>';
-// } else {
-//     echo '<script> alert("Ubicacion NO")</script>';
-// }
+    // mostrar $phpVar1 y $phpVar2
+    echo '<script> alert("Ubicacion listo")</script>';
+} else {
+    echo '<script> alert("Ubicacion NO")</script>';
+}
 
 
 
@@ -61,8 +61,8 @@ if($connect!=null ){
 //   echo '<script> alert($NaciDato) </script>';
 //   echo '<script> alert($CedulaDato) </script>';
 
-  if($codigoqr!=null && $ipuser!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
-   guardarDatos($codigoqr,$ipuser,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
+  if($codigoqr!=null && $ipuser!=null && $lond!=null && $latd!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
+   guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
@@ -75,15 +75,15 @@ if($connect!=null ){
 }
 
 
-function guardarDatos($codigoqr,$ipuser,$req,$connect){
+function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   if(isset($req)){
 
 //   $BBDNombre=$NombreDato;
   $BBDUsuario=$codigoqr;
   $BBDDepar=$ipuser;
-//   $BBDNaci=$NaciDato;
-//   $BBDCedula=$CedulaDato;
-  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$BBDDepar', '9', '9', '9')";
+  $BBDNaci=$lond;
+  $BBDCedula=$latd;
+  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$BBDDepar', '$BBDNaci', '$BBDCedula', '9')";
     
   
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
