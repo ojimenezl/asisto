@@ -20,6 +20,8 @@ if (isset($_GET["w1"])) {
     // mostrar $phpVar1 y $phpVar2
     echo '<script> alert("Ubicacion listo")</script>';
 } else {
+    
+    echo '<script> alert("$_SERVER['REMOTE_ADDR']")</script>';
     echo '<script> alert("Ubicacion NO")</script>';
 }
 
