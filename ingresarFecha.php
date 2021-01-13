@@ -3,9 +3,7 @@ include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 $codigoqr=$_POST["msg2"];
-if($codigoqr!=null){
-   echo'<script> alert("Posiciona bien tu celular, el código QR No se a podido leer.")</script>';
-}
+
 $lond = $_POST["ubilat"];
 $latd = $_POST["ubilon"];
 $txt="userLoadPC.txt";
