@@ -2,7 +2,7 @@ $(document).ready(function() {
     
 function validar(frm) {
   frm.sub.disabled = true;
-    if (frm['msg'].value =='') return
+    if (frm['msg2'].value =='') return
   frm.sub.disabled = false;
 }
 function geoloc() {
