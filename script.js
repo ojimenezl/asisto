@@ -18,7 +18,8 @@ function showPosition(position){
 	var latd=latitud;
 	var longd=longitud;
 	alert(latd);
-  window.location.href = window.location.href + "?w1=" + latd + "&w2=" + longd;
+ var inputlatd = document.getElementById("ubi");
+    inputNombre.value = latd +" "+longd;
 }
 function showError(error){
   switch(error.code) {
@@ -97,7 +98,7 @@ function showError(error){
     });
 
     $('#startbtn').click(function() {
-        geoloc();
+        
         $('#startbtn img').hide();
         $('#stopbtn').show();
         var inputF = document.getElementById("msg2");
@@ -110,7 +111,7 @@ function showError(error){
             inputF.value = content
                 //$('#msg2').text(content);
         });
-
+	geoloc();
 
         Instascan.Camera.getCameras().then(function(cameras) {
             if (cameras.length > 0) {
