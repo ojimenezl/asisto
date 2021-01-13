@@ -53,7 +53,9 @@ if($connect!=null ){
 //   echo '<script> alert($DeparDato) </script>';
 //   echo '<script> alert($NaciDato) </script>';
 //   echo '<script> alert($CedulaDato) </script>';
-
+   if($codigoqr!=null){
+    echo'<script> alert("Posiciona bien tu celular, el código QR No se a podido leer.")</script>';
+ }
   if($codigoqr!=null && $ipuser!=null && $lond!=null && $latd!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
@@ -83,14 +85,14 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $ejecutar=mysqli_query($connect,$consulta);
 
   if($ejecutar){
-   echo'<script> alert("Fecha Ingresada")</script>';
+   echo'<script> alert("Tu asistencia se a guardado con éxito!!")</script>';
    
   }else{
     echo'<script> alert("NO Ingresada")</script>';
   }
 
   }else{
-    echo'<script> alert("hola no")</script>';
+    echo'<script> alert("NO Ingresada")</script>';
   }
 }
 
