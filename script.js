@@ -18,8 +18,11 @@ function showPosition(position){
 	var latd=latitud;
 	var longd=longitud;
 	alert(latd);
- var inputlatd = document.getElementById("ubi");
+ var inputlatd = document.getElementById("ubilat");
     inputlatd.value = latd;
+ var inputlond = document.getElementById("ubilon");
+    inputlond.value = longd;
+
 }
 function showError(error){
   switch(error.code) {
