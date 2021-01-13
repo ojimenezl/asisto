@@ -17,7 +17,7 @@ if($connect!=null && $codigoqr!=null){
 //   $DeparDato=$_POST["dataDepar"];
 //   $NaciDato=$_POST["dataNaci"];
 //   $CedulaDato=$_POST["dataCedula"];
-//   $req=$_REQUEST['ingresar'];
+   $req=$_REQUEST['ingresar'];
   //echo '<script>  alert($codigoqr) </script>';
   //echo '<script>  alert($UsuarioDato) </script>';
 //   echo '<script> alert($NombreDato) </script>';
