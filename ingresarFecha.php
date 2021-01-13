@@ -21,7 +21,7 @@ if (isset($_GET["w1"])) {
     echo '<script> alert("Ubicacion listo")</script>';
 } else {
     
-    echo '<script> alert("$_SERVER['REMOTE_ADDR']")</script>';
+//     echo '<script> alert("$_SERVER['REMOTE_ADDR']")</script>';
     echo '<script> alert("Ubicacion NO")</script>';
 }
 
