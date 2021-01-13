@@ -192,7 +192,13 @@ body {
     font-family: arial;
     font-size: 20px;
 }
-
+#ubi {
+    position: absolute;
+    top: 59%;
+    left: 42%;
+    font-family: arial;
+    font-size: 20px;
+}
 #startbtn {
     position: absolute;
     top: 45%;
