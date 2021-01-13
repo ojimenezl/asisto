@@ -25,7 +25,7 @@ if($connect!=null && $codigoqr!=null){
 //   echo '<script> alert($NaciDato) </script>';
 //   echo '<script> alert($CedulaDato) </script>';
 
-  if($codigoqr!=null && $NombreDato!=null ){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
+  if($codigoqr!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    guardarDatos($codigoqr,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
