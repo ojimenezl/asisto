@@ -1,9 +1,9 @@
 $(document).ready(function() {
     
 function validar(frm) {
-  frm.sub.disabled = true;
+  frm.ingresar.disabled = true;
     if (frm['msg2'].value =='') return
-  frm.sub.disabled = false;
+  frm.ingresar.disabled = false;
 }
 function geoloc() {
   d=document.getElementById("demo");
