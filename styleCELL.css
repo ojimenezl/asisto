@@ -30,22 +30,9 @@ body {
     top: 0px;
     left: 50%;
 }
-#qrButton {
-    position: absolute;
-    top: 68%;
-    left: 53%;
-    height: 35px;
-    width: 100px;
-    background: #1a1a1a;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 10px;
-    display: none;
-}
+
 #option {
-    width: 70px;
+    width: 80px;
     height: 130px;
     background: #23242a;
     position: fixed;
