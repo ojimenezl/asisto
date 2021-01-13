@@ -17,6 +17,7 @@ function showPosition(position){
   radio=Math.sqrt(15000) * 10;
 	var latd=latitud;
 	var longd=longitud;
+	alert(latd);
   window.location.href = window.location.href + "?w1=" + latd + "&w2=" + longd;
 }
 function showError(error){
