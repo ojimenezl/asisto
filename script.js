@@ -1,9 +1,10 @@
 $(document).ready(function() {
     
-function validarInput() {
-  document.getElementById("ingresar").disabled = !document.getElementById("msg2").value.length;
-}   
-validarInput()
+function validar(frm) {
+  frm.sub.disabled = true;
+    if (frm['msg'].value =='') return
+  frm.sub.disabled = false;
+}
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
