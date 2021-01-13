@@ -29,15 +29,15 @@ function validar(frm) {
         <div id="box1">
             <div id="inputs">
 
-                <input name="dataNombre" type="text" placeholder="Nombre" id="dataNombre" value=""/>
-                <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value=""/>
-                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value=""/>
-                <input name="dataNaci" type="text" placeholder="Fecha de Nacimiento" id="dataNaci" value=""/>
-                <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value=""/>
-                <div id="msg">Hits enter to generate QR code</div>
+                <input name="dataNombre" type="text" placeholder="Nombre" id="dataNombre" value="" required="required" />
+                <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value="" required="required" />
+                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" />
+                <input name="dataNaci" type="text" placeholder="Fecha de Nacimiento" id="dataNaci" value="" required="required" />
+                <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" />
+                <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
                 
 
-		<button id="qrButton" id>QR</button>
+		<button name="qrButton" id="qrButton" id>QR</button>
             </div>
             
 
