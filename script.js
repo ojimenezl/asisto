@@ -1,11 +1,6 @@
 $(document).ready(function() {
     
-function validar(frm) {
-  frm.ingresar.disabled = true;
-  for (i=2; i<3; i++)
-    if (frm['msg2'].value =='') return
-  frm.ingresar.disabled = false;
-}
+
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
