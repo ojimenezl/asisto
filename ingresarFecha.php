@@ -3,6 +3,8 @@ include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 $codigoqr=$_POST["msg2"];
+$lond = $_POST["ubilat"];
+$latd = $_POST["ubilon"];
 $txt="userLoadPC.txt";
 
 //si
@@ -12,18 +14,7 @@ $txt="userLoadPC.txt";
 
 
 //no
-if (isset($_GET["w1"])) {
-    // asignar w1 y w2 a dos variables
-    $lond = $_GET["w1"];
-    $latd = $_GET["w2"];
- 
-    // mostrar $phpVar1 y $phpVar2
-    echo '<script> alert("Ubicacion listo")</script>';
-} else {
-    
-//     echo '<script> alert("$_SERVER['REMOTE_ADDR']")</script>';
-    echo '<script> alert("Ubicacion NO")</script>';
-}
+
 
 
 
