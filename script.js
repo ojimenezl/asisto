@@ -1,6 +1,9 @@
 $(document).ready(function() {
     
-    
+function validarInput() {
+  document.getElementById("ingresar").disabled = !document.getElementById("msg2").value.length;
+}   
+validarInput()
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
