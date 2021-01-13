@@ -8,6 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 <script type="text/javascript" src="script.js"></script>
+<script>
+function validar(frm) {
+  frm.ingresar.disabled = true;
+  for (i=2; i<3; i++)
+    if (frm['msg2'].value =='') return
+  frm.ingresar.disabled = false;
+}
+</script>
 </head>
 
     <div id="option">
