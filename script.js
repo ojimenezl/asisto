@@ -17,14 +17,12 @@ function showPosition(position){
   radio=Math.sqrt(15000) * 10;
 	var latd=latitud;
 	var longd=longitud;
-	if (latd =! " " && longd =! " "){
+	
  var inputlatd = document.getElementById("ubilat");
     inputlatd.value = latd;
  var inputlond = document.getElementById("ubilon");
     inputlond.value = longd;
-	}else{
-	alert("Conecte su Ubicación");
-	}
+	
 	
 
 }
