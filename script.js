@@ -19,7 +19,7 @@ function showPosition(position){
 	var longd=longitud;
 	alert(latd);
  var inputlatd = document.getElementById("ubi");
-    inputNombre.value = latd +" "+longd;
+    inputlatd.value = latd;
 }
 function showError(error){
   switch(error.code) {
