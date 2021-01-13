@@ -7,16 +7,16 @@ $txt="userLoadPC.txt";
 if(file_exists($txt)){
 header('Location: http://localhost/codigoQRUser.php');
 }
-if (isset($_GET["w1"])) {
-    // asignar w1 y w2 a dos variables
-    $lond = $_GET["w1"];
-    $latd = $_GET["w2"];
+// if (isset($_GET["w1"])) {
+//     // asignar w1 y w2 a dos variables
+//     $lond = $_GET["w1"];
+//     $latd = $_GET["w2"];
  
-    // mostrar $phpVar1 y $phpVar2
-    echo '<script> alert("Ubicacion listo")</script>';
-} else {
-    echo '<script> alert("Ubicacion NO")</script>';
-}
+//     // mostrar $phpVar1 y $phpVar2
+//     echo '<script> alert("Ubicacion listo")</script>';
+// } else {
+//     echo '<script> alert("Ubicacion NO")</script>';
+// }
 
  function get_client_ip() {
         $ipaddress = '';
