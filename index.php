@@ -71,7 +71,7 @@
 </body>
 <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
-<script>
+<script type="text/javascript">
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
@@ -106,6 +106,7 @@ function showError(error){
       break;
     }
   }
+geoloc();
 </script>
 
 
