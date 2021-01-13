@@ -62,7 +62,9 @@ if($connect!=null ){
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
    fwrite($fh, $texto);
    fclose($fh);
-  }
+  }else{
+  echo'<script> alert("Faltan datos, no hemos podido registrar tu asistencia. Prueba de nuevo.")</script>';
+}
 
 }else{
   echo'<script> alert("NO Conetado")</script>';
