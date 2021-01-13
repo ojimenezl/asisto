@@ -55,7 +55,7 @@ if($connect!=null && $codigoqr!=null $$ $ipuser!=null){
 //   echo '<script> alert($CedulaDato) </script>';
 
   if($codigoqr!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
-   guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
+   guardarDatos($codigoqr,$ipuser,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
@@ -68,7 +68,7 @@ if($connect!=null && $codigoqr!=null $$ $ipuser!=null){
 }
 
 
-function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
+function guardarDatos($codigoqr,$ipuser,$req,$connect){
   if(isset($req)){
 
 //   $BBDNombre=$NombreDato;
@@ -76,7 +76,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
 //   $BBDDepar=$DeparDato;
 //   $BBDNaci=$NaciDato;
 //   $BBDCedula=$CedulaDato;
-  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$ipuser', '$lond', '$latd', '9')";
+  $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$ipuser', '9', '9', '9')";
     
   
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
