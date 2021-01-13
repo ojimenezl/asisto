@@ -71,8 +71,8 @@
 </body>
 <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
-
-<!-- function geoloc() {
+<script>
+function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
     d.innerHTML="<p>Tu dispositivo soporta la geolocalización.</p>";
@@ -106,8 +106,7 @@ function showError(error){
       break;
     }
   }
- -->
-
+</script>
 
 
 </html>
