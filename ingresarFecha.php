@@ -44,8 +44,8 @@ $txt="userLoadPC.txt";
 //         return $ipaddress;
 //     }
 // $ipuser=get_client_ip();
-// if($connect!=null ){
-//   echo'<script> alert("Conectado")</script>';
+if($connect!=null ){
+  echo'<script> alert("Conectado")</script>';
 
 // //   $UsuarioDato=$codigoqr;
 // //   $UsuarioDato=$_POST["dataUsuario"];
@@ -68,7 +68,7 @@ $txt="userLoadPC.txt";
 //    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
 //    fwrite($fh, $texto);
 //    fclose($fh);
-//   }
+  }
 
 // }else{
 //   echo'<script> alert("NO Conetado")</script>';
