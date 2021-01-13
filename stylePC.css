@@ -62,17 +62,18 @@ body {
     line-height: 50px;
 }
 #qrButton {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-top: 25px;
-    font-family: arial black;
-    font-size: 20px;
-    font-weight: bold;
+    position: absolute;
+    top: 68%;
+    left: 53%;
+    height: 35px;
+    width: 100px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    border: none;
+    outline: none;
     color: white;
-    text-align: center;
-    line-height: 40px;
+    font-size: 10px;
+    display: none;
 }
 .active {
     background: #ffbb00;
