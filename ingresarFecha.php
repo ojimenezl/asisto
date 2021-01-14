@@ -97,12 +97,13 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
 //   $BBDNombre=$NombreDato;
   $BBDUsuario=$codigoqr;
   $palabras = explode (" ", $BBDUsuario);
-  $BBDDCedula=$palabras[1];
+  $BBDDep=$palabras[1];
+  $BBDDCedula=$palabras[2]; 
   $BBDDIp=$ipuser;
   $BBDLond=$lond;
   $BBDLatd=$latd;
 //   $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$BBDDepar', '$BBDNaci', '$BBDCedula', '9')";
-  $consulta="INSERT INTO registro(`nombre`, `cedula`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDIp', '$BBDLond', '$BBDLatd')";
+  $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
   
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
   $ejecutar=mysqli_query($connect,$consulta);
