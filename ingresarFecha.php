@@ -42,11 +42,11 @@ $ipuser=get_client_ip();
 function validarip($connect){
 $ipuser=get_client_ip();
 $ipres=buscarDatos($ipuser,$connect);
-if($ipres!=null){
-header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
-}else{
-header('Location: https://asisto.herokuapp.com/');
-}
+// if($ipres!=null){
+// header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
+// }else{
+// header('Location: https://asisto.herokuapp.com/');
+// }
 }
 
 
