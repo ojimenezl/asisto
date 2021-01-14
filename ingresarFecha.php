@@ -96,7 +96,8 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
 
 //   $BBDNombre=$NombreDato;
   $BBDUsuario=$codigoqr;
-  $BBDDCedula=$BBDUsuario[1];
+  $palabras = explode (" ", $BBDUsuario);
+  $BBDDCedula=$palabras[1];
   $BBDDIp=$ipuser;
   $BBDLond=$lond;
   $BBDLatd=$latd;
