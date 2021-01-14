@@ -2,9 +2,9 @@
 include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-if($connect!=null ){
-validarip($connect)
-}
+// if($connect!=null ){
+// validarip($connect)
+// }
 $codigoqr=$_POST["msg2"];
 
 $lond = $_POST["ubilat"];
