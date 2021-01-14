@@ -193,21 +193,21 @@ body {
     background-color: white;
 }
 
-#msg2 {
+#msg2m {
     position: absolute;
     top: 69%;
     left: 42%;
     font-family: arial;
     font-size: 20px;
 }
-#ubilat {
+#ubilatm {
     position: absolute;
     top: 59%;
     left: 42%;
     font-family: arial;
     font-size: 20px;
 }
-#ubilon {
+#ubilonm {
     position: absolute;
     top: 49%;
     left: 42%;
