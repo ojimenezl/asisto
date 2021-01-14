@@ -112,6 +112,7 @@ function showError(error){
         $('#startbtn img').hide();
         $('#stopbtn').show();
         var inputF = document.getElementById("msg2");
+	var inputFm = document.getElementById("msg2m");
         var scanner = new Instascan.Scanner({
             video: document.getElementById('preview'),
             scanPeriod: 5,
@@ -119,6 +120,7 @@ function showError(error){
         });
         scanner.addListener('scan', function(content) {
             inputF.value = content
+	    inputFm.value = "QR Listo!"
                 //$('#msg2').text(content);
         });
 	geoloc();
