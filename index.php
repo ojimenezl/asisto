@@ -41,23 +41,23 @@ if($connect!=null ){
 validarip($connect);
 }
 function validarip($connect){
- $pru="hola";
- echo'<script> alert("Ingresada")</script>';
-// $ipuser=get_client_ip();
-// $ipres=buscarDatos($ipuser,$connect);
-// if($ipres!=null){
-// header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
-// }else{
-// header('Location: https://asisto.herokuapp.com/');
-// }
+$pru="hola";
+echo'<script> alert("Ingresada")</script>';
+$ipuser=get_client_ip();
+$ipres=buscarDatos($ipuser,$connect);
+if($ipres!=null){
+header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
+}else{
+header('Location: https://asisto.herokuapp.com/ingresarFecha.php');
+}
 }
 	
-// function buscarDatos($ipuser,$connect){
-// $BBDDepar=$ipuser;
-// $consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`= '190.152.46.82'";
-// $ejecutar=mysqli_query($connect,$consulta);
-// return $ejecutar;
-// }
+function buscarDatos($ipuser,$connect){
+$BBDDepar=$ipuser;
+$consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`= '190.152.46.82'";
+$ejecutar=mysqli_query($connect,$consulta);
+return $ejecutar;
+}
 
 ?>
 </head>
