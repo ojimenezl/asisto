@@ -95,8 +95,9 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   if(isset($req)){
 
 //   $BBDNombre=$NombreDato;
-  $BBDUsuario=$codigoqr;
-  $palabras = explode (" ", $BBDUsuario);
+  $BBD=$codigoqr;
+  $palabras = explode (" ", $BBD);
+  $BBDUsuario=$palabras[0];
   $BBDDep=$palabras[1];
   $BBDDCedula=$palabras[2]; 
   $BBDDIp=$ipuser;
