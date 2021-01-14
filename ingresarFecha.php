@@ -112,7 +112,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
 }
 function buscarDatos($ipuser,$connect){
 $BBDDepar=$ipuser;
-$consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`='$BBDDepar'"
+$consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`= '190.152.46.82'"
 $ejecutar=mysqli_query($connect,$consulta);
 return $ejecutar;
 ?>
