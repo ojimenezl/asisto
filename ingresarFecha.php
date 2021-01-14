@@ -3,7 +3,9 @@ include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 
-
+if($connect!=null ){
+validarip($connect);
+}
 
 $codigoqr=$_POST["msg2"];
 
@@ -57,7 +59,7 @@ function validarip($connect){
 
 if($connect!=null ){
   echo'<script> alert("Conectado")</script>';
-  validarip($connect);
+  
 //   $UsuarioDato=$codigoqr;
 //   $UsuarioDato=$_POST["dataUsuario"];
 //   $NombreDato=$_POST["dataNombre"];
