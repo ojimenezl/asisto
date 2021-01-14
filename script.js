@@ -51,12 +51,13 @@ function showError(error){
     var qrcode = new QRCode("outputbox");
 
     function makeCode() {
-        var inputNombre = document.getElementById('dataNombre');
+//         var inputNombre = document.getElementById('dataNombre');
         var inputUsuario = document.getElementById('dataUsuario');
         var inputDepar = document.getElementById('dataDepar');
-        var inputNaci = document.getElementById('dataNaci');
+//         var inputNaci = document.getElementById('dataNaci');
         var inputCedula = document.getElementById('dataCedula');
-        input = inputNombre.value + " " + inputUsuario.value + " " + inputDepar.value + " " + inputNaci.value + " " + inputCedula.value;
+//         input = inputNombre.value + " " + inputUsuario.value + " " + inputDepar.value + " " + inputNaci.value + " " + inputCedula.value;
+         input = inputUsuario.value + " " + inputDepar.value + " " + inputCedula.value;
 
         qrcode.makeCode(input);
     }
@@ -126,18 +127,18 @@ function showError(error){
                         if (cameras[0] != "") {
                             scanner.start(cameras[1]);
                         } else {
-                            alert("Su c�mara delantera no funciona");
+                            alert("Su cámara delantera no funciona");
                         }
                     } else if ($(this).val() == 2) {
                         if (cameras[1] != "") {
                             scanner.start(cameras[1]);
                         } else {
-                            alert("Su camara trasera no funciona");
+                            alert("Su cámara trasera no funciona");
                         }
                     }
                 });
             } else {
-                alert("Su c�mara no funciona");
+                alert("Su cámara no funciona");
             }
         }).catch(function(e) {
             alert(e);
