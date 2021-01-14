@@ -42,7 +42,7 @@ validarip($connect);
 }
 function validarip($connect){
  $pru="hola";
- echo "<script> alert("hola") </script>";
+ echo'<script> alert("Ingresada")</script>';
 // $ipuser=get_client_ip();
 // $ipres=buscarDatos($ipuser,$connect);
 // if($ipres!=null){
