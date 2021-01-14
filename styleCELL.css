@@ -11,6 +11,9 @@ body {
     top: 0px;
     left: 0px;
 }
+#inputs{
+    margin-top: 200px;
+}
 
 #box1 {
     width: 50%;
