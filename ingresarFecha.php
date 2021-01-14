@@ -2,6 +2,7 @@
 include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
+validarip($connect)
 $codigoqr=$_POST["msg2"];
 
 $lond = $_POST["ubilat"];
@@ -9,9 +10,7 @@ $latd = $_POST["ubilon"];
 $txt="userLoadPC.txt";
 
 //si
-// if(file_exists($txt)){
-// header('Location: http://localhost/codigoQRUser.php');
-// }
+
 
 
 //no
@@ -38,6 +37,20 @@ $txt="userLoadPC.txt";
         return $ipaddress;
     }
 $ipuser=get_client_ip();
+
+
+function validarip($connect){
+$ipuser=get_client_ip();
+$ipres=buscarDatos($ipuser,$connect);
+if($ipres!=null){
+header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
+}else{
+header('Location: https://asisto.herokuapp.com/');
+}
+}
+
+
+
 if($connect!=null ){
   echo'<script> alert("Conectado")</script>';
 
@@ -56,6 +69,7 @@ if($connect!=null ){
 //   echo '<script> alert($CedulaDato) </script>';
 
   if($codigoqr!=null && $ipuser!=null && $lond!=null && $latd!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
+   
    guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
    $fh = fopen($txt, "w") or die("Error al crear");
@@ -96,5 +110,9 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
     echo'<script> alert("NO Ingresada")</script>';
   }
 }
-
+function buscarDatos($ipuser,$connect){
+$BBDDepar=$ipuser;
+$consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`='$BBDDepar'"
+$ejecutar=mysqli_query($connect,$consulta);
+return $ejecutar;
 ?>
