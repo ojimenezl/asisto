@@ -32,7 +32,7 @@ body {
 }
 
 #option {
-    width: 85px;
+    width: 70px;
     height: 130px;
     background: #23242a;
     position: fixed;
@@ -302,7 +302,15 @@ body {
     text-align: center;
     line-height: 40px;
 }
-
+#ingresar{
+    background: #1a1a1a;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: -45px;
+    font-size: 18px;
+}
 #btn2 {
     line-height: 50px;
 }
