@@ -36,8 +36,9 @@ function validar(frm) {
                 <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" />
                 <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
                 
-
+                <div id="qrb">
 		<button name="qrButton" id="qrButton" id>QR</button>
+	        </div>
             </div>
             
 
