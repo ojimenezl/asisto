@@ -2,9 +2,9 @@
 include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-if($connect!=null ){
-validarip($connect)
-}
+// if($connect!=null ){
+// validarip($connect)
+// }
 $codigoqr=$_POST["msg2"];
 
 $lond = $_POST["ubilat"];
@@ -41,16 +41,17 @@ $txt="userLoadPC.txt";
 $ipuser=get_client_ip();
 
 
-function validarip($connect){
- $pru="hola";
-$ipuser=get_client_ip();
-$ipres=buscarDatos($ipuser,$connect);
-if($ipres!=null){
-header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
-}else{
-header('Location: https://asisto.herokuapp.com/');
-}
-}
+// function validarip($connect){
+//  $pru="hola";
+// $ipuser=get_client_ip();
+// $ipres=buscarDatos($ipuser,$connect);
+// if($ipres!=null){
+// header('Location: https://asisto.herokuapp.com/codigoQRUser.php');
+// }else{
+// header('Location: https://asisto.herokuapp.com/');
+// }
+
+// }
 
 
 
@@ -113,10 +114,10 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
     echo'<script> alert("NO Ingresada")</script>';
   }
 }
-function buscarDatos($ipuser,$connect){
-$BBDDepar=$ipuser;
-$consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`= '190.152.46.82'"
-$ejecutar=mysqli_query($connect,$consulta);
-return $ejecutar;
-}
+// function buscarDatos($ipuser,$connect){
+// $BBDDepar=$ipuser;
+// $consulta="SELECT `usuario` FROM `usuario` WHERE `usuario`= '190.152.46.82'"
+// $ejecutar=mysqli_query($connect,$consulta);
+// return $ejecutar;
+// }
 ?>
