@@ -101,9 +101,9 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $BBDLond=$lond;
   $BBDLatd=$latd;
 //   $consulta="INSERT INTO usuario (`nombre`, `usuario`, `cedula`, `correo`, `fecha`) VALUES ('$BBDUsuario','$BBDDepar', '$BBDNaci', '$BBDCedula', '9')";
-  $consulta="INSERT INTO registro(`nombre`, `cedula`, `ipuser`, `latitud`, `longitud`, `hora`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDIp', '$BBDLond', '$BBDLatd')";
+  $consulta="INSERT INTO registro(`nombre`, `cedula`, `ipuser`, `latitud`, `longitud`, `hora`) VALUES ('9', '9', '9', '9', '9', '9')";
   
-  //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
+  //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";'$BBDUsuario','$BBDDCedula','$BBDDIp', '$BBDLond', '$BBDLatd'
   $ejecutar=mysqli_query($connect,$consulta);
 
   if($ejecutar){
