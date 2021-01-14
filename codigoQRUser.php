@@ -9,12 +9,13 @@
 </head>
 
 <?php
-$archivo=fopen("userLoadPC.txt","r") or die("problemas");
-while(!feof($archivo)){
-    $read=fgets($archivo);
-}
-echo'<script> alert("en QR")</script>';
-$json=json_encode($read);
+$p="p";
+// $archivo=fopen("userLoadPC.txt","r") or die("problemas");
+// while(!feof($archivo)){
+//     $read=fgets($archivo);
+// }
+// echo'<script> alert("en QR")</script>';
+// $json=json_encode($read);
 
 ?>
 
@@ -58,7 +59,8 @@ $json=json_encode($read);
 <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
 <script>
-var js='<?php echo $json;?>'
+
+var js='<?php echo $p;?>'
 var qrcode = new QRCode("outputbox");
 
 
