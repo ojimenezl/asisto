@@ -19,9 +19,13 @@ function showPosition(position){
 	var longd=longitud;
 	
  var inputlatd = document.getElementById("ubilat");
+ var inputlatdm = document.getElementById("ubilatm");
     inputlatd.value = latd;
+    inputlatdm.value = "ubicacion listo!";
  var inputlond = document.getElementById("ubilon");
+ var inputlondm = document.getElementById("ubilonm");
     inputlond.value = longd;
+    inputlondm.value = "ubicacion listo!";
 	
 	
 
