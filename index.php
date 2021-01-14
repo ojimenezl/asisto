@@ -60,10 +60,10 @@ function validar(frm) {
                 
                 <video id="preview" class="p-1 border" style="width: 300px;"></video>
              <form  action="ingresarFecha.php" method="post" accept-charset="utf-8">
-<!--                 <input type="text" name="msg2" id="msg2" onkeyup = "validar(this.form)"  hidden= "true" required="required /> -->
-		     <input type="text" name="msg2" id="msg2" disabled="disabled"/>
-		     <input type="text" name="ubilat" id="ubilat"  disabled="disabled"/>
-		     <input type="text" name="ubilon" id="ubilon"  disabled="disabled"/>
+<!--                 <input type="text" name="msg2" id="msg2" onkeyup = "validar(this.form)"   disabled="disabled" hidden= "true" required="required /> -->
+		     <input type="text" name="msg2" id="msg2" />
+		     <input type="text" name="ubilat" id="ubilat" />
+		     <input type="text" name="ubilon" id="ubilon" />
                
                 <input type="submit" id="ingresar" name="ingresar" value="ingresar" />
              </form>
