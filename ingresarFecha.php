@@ -2,9 +2,9 @@
 include "index.php";
 
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-// if($connect!=null ){
-// validarip($connect)
-// }
+if($connect!=null ){
+validarip($connect)
+}
 $codigoqr=$_POST["msg2"];
 
 $lond = $_POST["ubilat"];
@@ -41,8 +41,8 @@ $txt="userLoadPC.txt";
 $ipuser=get_client_ip();
 
 
-// function validarip($connect){
-//  $pru="hola";
+function validarip($connect){
+ $pru="hola";
 // $ipuser=get_client_ip();
 // $ipres=buscarDatos($ipuser,$connect);
 // if($ipres!=null){
@@ -51,7 +51,7 @@ $ipuser=get_client_ip();
 // header('Location: https://asisto.herokuapp.com/');
 // }
 
-// }
+}
 
 
 
