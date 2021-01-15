@@ -57,7 +57,7 @@ function validar(frm) {
        
                     <img src="img.png" />
                 </div>
-                
+                <input type="file" accept="image/*" capture="camera">
                 <video id="preview" class="p-1 border" style="width: 300px;"></video>
              <form  action="ingresarFecha.php" method="post" accept-charset="utf-8">
 <!--                 <input type="text" name="msg2" id="msg2" onkeyup = "validar(this.form)"   disabled="disabled" hidden= "true" required="required /> -->
