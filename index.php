@@ -16,7 +16,11 @@ function validar(frm) {
   frm.ingresar.disabled = false;
 }
 </script> -->
+<?php
+// Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
+$link = new PDO('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT'); // el campo vaciío es para la password. 
 
+?>
 </head>
 
     <div id="option">
@@ -54,11 +58,7 @@ function validar(frm) {
 
         <div id="box2">
 		<div id="ttb">
-	<?php
-// Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
-$link = new PDO('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT'); // el campo vaciío es para la password. 
 
-?>
 <table id="table1">
 
 
