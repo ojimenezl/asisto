@@ -83,6 +83,9 @@ function validar(frm) {
 			      <td id="td1">5</td>
 			      <td id="td1">10</td>
 			    </tr>
+				  <?php
+					}
+				?>
 			  </tbody>
 		</table>
 		
