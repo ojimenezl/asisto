@@ -55,7 +55,7 @@ function validar(frm) {
                 <div id="startbtn">
                     <!--input type="text" name="msg2" id="msg2" size="40" onkeyup="return validar(this.value,'bt1')"-->
        
-                    <img src="img.png" />
+                    <img src="img.jpg" />
                 </div>
 <!--                 <input type="file" accept="image/*" capture="camera"> -->
                 <video id="preview" class="p-1 border" style="width: 300px;"></video>
