@@ -66,27 +66,29 @@ function validar(frm) {
 
 				</tr>
 			  </thead>
-	<?php foreach ($link->query('SELECT * from registro') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
+	<?php foreach ($link->query('SELECT * from registro') as $row){ ?> 
 			  <tfoot>
 			    <tr>
 				<td id="td1"><?php echo $row['nombre'] ?></td>
 
 			    </tr>
 			  </tfoot>
-			  <tbody>
+			 <?php
+					}
+				?>
+<!-- 			  <tbody>
 			    <tr>
 				<td id="td1"><?php echo $row['hora'] ?></td>
 
 			    </tr>
+
 			    <tr>
 				<td id="td1">Gas</td>
 			      <td id="td1">5</td>
 			      <td id="td1">10</td>
 			    </tr>
-				  <?php
-					}
-				?>
-			  </tbody>
+
+			  </tbody> -->
 		</table>
 		
 		  </div>
