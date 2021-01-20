@@ -3,7 +3,12 @@ body {
     margin: 0px;
     overflow: hidden;
 }
-
+table{
+	width:100%; 
+}
+td{
+	border:2px solid black;
+}
 #main {
     width: 200%;
     height: 100vh;
