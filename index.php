@@ -58,7 +58,7 @@ function validar(frm) {
                     <img src="img.jpg" />
                 </div>
 		    
-		    
+		   <div id="tabla_reg"> 
 		    
 		    <table>
 			  <thead>
@@ -88,7 +88,7 @@ function validar(frm) {
 			    </tr>
 			  </tbody>
 		</table>
-		    
+		    </div>
 		    
 		    
 		    
