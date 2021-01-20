@@ -68,14 +68,7 @@ function validar(frm) {
 			  </thead>
 
 			  <tfoot>
-		       <?php foreach ($link->query('SELECT * FROM `registro`') as $row){ ?> 
-			    <tr>
-				<td id="td1"><?php echo $row['nombre'] ?></td>
 
-			    </tr>
-				 <?php
-					}
-				?>
 			  </tfoot>
 
 <!-- 			  <tbody>
