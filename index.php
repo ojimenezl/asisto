@@ -25,6 +25,10 @@ function validar(frm) {
 
 
     </div>
+	
+	
+	<div id="ttb">
+	
 <table id="table1">
 			  <thead>
 			    <tr>
@@ -53,6 +57,9 @@ function validar(frm) {
 			    </tr>
 			  </tbody>
 		</table>
+		
+		  </div>
+		
     <div id="main">
         <div id="box1">
             <div id="inputs">
