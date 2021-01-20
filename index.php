@@ -27,7 +27,33 @@ function validar(frm) {
     </div>
 	
 	
-	<div id="ttb">
+	
+		
+    <div id="main">
+        <div id="box1">
+            <div id="inputs">
+
+<!--                 <input name="dataNombre" type="text" placeholder="Nombre" id="dataNombre" value="" required="required" /> -->
+                <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value="" required="required" />
+                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" />
+<!--                 <input name="dataNaci" type="text" placeholder="Fecha " id="dataNaci" value="" required="required" /> -->
+                <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" />
+                <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
+                
+                <div id="qrb">
+		<button name="qrButton" id="qrButton" id>QR</button>
+	        </div>
+            </div>
+            
+
+            <div id="outputbox">
+                <img src="img.jpg" />
+		
+            </div>
+        </div>
+
+        <div id="box2">
+		<div id="ttb">
 	
 <table id="table1">
 			  <thead>
@@ -59,31 +85,6 @@ function validar(frm) {
 		</table>
 		
 		  </div>
-		
-    <div id="main">
-        <div id="box1">
-            <div id="inputs">
-
-<!--                 <input name="dataNombre" type="text" placeholder="Nombre" id="dataNombre" value="" required="required" /> -->
-                <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value="" required="required" />
-                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" />
-<!--                 <input name="dataNaci" type="text" placeholder="Fecha " id="dataNaci" value="" required="required" /> -->
-                <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" />
-                <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
-                
-                <div id="qrb">
-		<button name="qrButton" id="qrButton" id>QR</button>
-	        </div>
-            </div>
-            
-
-            <div id="outputbox">
-                <img src="img.jpg" />
-		
-            </div>
-        </div>
-
-        <div id="box2">
             <div id="scanner">
                 <button id="stopbtn">Stop</button>
                 <div id="startbtn">
