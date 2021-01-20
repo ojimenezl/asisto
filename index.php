@@ -56,12 +56,15 @@ function validar(frm) {
 		<div id="ttb">
 	
 <table id="table1">
+
+
 			  <thead>
-			    <tr>
-				<td id="td1" scope="row">Mes</td>
-			      <td>Enero</td>
-			      <td id="td1">Febrero</td>
-			    </tr>
+			<tr>
+					<th>ID</th>
+					<th>NOMBRE</th>
+					<th>APELLIDO</th>
+
+				</tr>
 			  </thead>
 			  <tfoot>
 			    <tr>
