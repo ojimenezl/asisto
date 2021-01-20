@@ -66,18 +66,17 @@ function validar(frm) {
 
 				</tr>
 			  </thead>
+	<?php foreach ($link->query('SELECT * from registro') as $row){ // aca puedes hacer la consulta e iterarla con each. ?> 
 			  <tfoot>
 			    <tr>
-				<td id="td1">Total</td>
-			      <td id="td1">15</td>
-			      <td id="td1">25</td>
+				<td id="td1"><?php echo $row['nombre'] ?></td>
+
 			    </tr>
 			  </tfoot>
 			  <tbody>
 			    <tr>
-				<td id="td1">Agua</td>
-			      <td id="td1">10</td>
-			      <td id="td1">15</td>
+				<td id="td1"><?php echo $row['hora'] ?></td>
+
 			    </tr>
 			    <tr>
 				<td id="td1">Gas</td>
