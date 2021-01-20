@@ -3,10 +3,10 @@ body {
     margin: 0px;
     overflow: hidden;
 }
-table{
+#table1{
 	width:100%; 
 }
-td{
+#td1{
 	border:2px solid black;
 }
 #main {
