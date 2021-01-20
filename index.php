@@ -25,7 +25,34 @@ function validar(frm) {
 
 
     </div>
-
+<table id="table1">
+			  <thead>
+			    <tr>
+				<td id="td1" scope="row">Mes</td>
+			      <td>Enero</td>
+			      <td id="td1">Febrero</td>
+			    </tr>
+			  </thead>
+			  <tfoot>
+			    <tr>
+				<td id="td1">Total</td>
+			      <td id="td1">15</td>
+			      <td id="td1">25</td>
+			    </tr>
+			  </tfoot>
+			  <tbody>
+			    <tr>
+				<td id="td1">Agua</td>
+			      <td id="td1">10</td>
+			      <td id="td1">15</td>
+			    </tr>
+			    <tr>
+				<td id="td1">Gas</td>
+			      <td id="td1">5</td>
+			      <td id="td1">10</td>
+			    </tr>
+			  </tbody>
+		</table>
     <div id="main">
         <div id="box1">
             <div id="inputs">
@@ -58,37 +85,7 @@ function validar(frm) {
                     <img src="img.jpg" />
                 </div>
 		    
-		
-		    
-		    <table id="table1">
-			  <thead>
-			    <tr>
-				<td id="td1" scope="row">Mes</td>
-			      <td>Enero</td>
-			      <td id="td1">Febrero</td>
-			    </tr>
-			  </thead>
-			  <tfoot>
-			    <tr>
-				<td id="td1">Total</td>
-			      <td id="td1">15</td>
-			      <td id="td1">25</td>
-			    </tr>
-			  </tfoot>
-			  <tbody>
-			    <tr>
-				<td id="td1">Agua</td>
-			      <td id="td1">10</td>
-			      <td id="td1">15</td>
-			    </tr>
-			    <tr>
-				<td id="td1">Gas</td>
-			      <td id="td1">5</td>
-			      <td id="td1">10</td>
-			    </tr>
-			  </tbody>
-		</table>
-		    
+
 		    
 		    
 		    
