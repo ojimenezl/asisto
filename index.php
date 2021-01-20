@@ -58,37 +58,37 @@ function validar(frm) {
                     <img src="img.jpg" />
                 </div>
 		    
-		   <div id="tabla_reg"> 
+		
 		    
-		    <table>
+		    <table id="table1">
 			  <thead>
 			    <tr>
-				<td scope="row">Mes</td>
+				<td id="td1" scope="row">Mes</td>
 			      <td>Enero</td>
-			      <td>Febrero</td>
+			      <td id="td1">Febrero</td>
 			    </tr>
 			  </thead>
 			  <tfoot>
 			    <tr>
-				<td>Total</td>
-			      <td>15</td>
-			      <td>25</td>
+				<td id="td1">Total</td>
+			      <td id="td1">15</td>
+			      <td id="td1">25</td>
 			    </tr>
 			  </tfoot>
 			  <tbody>
 			    <tr>
-				<td>Agua</td>
-			      <td>10</td>
-			      <td>15</td>
+				<td id="td1">Agua</td>
+			      <td id="td1">10</td>
+			      <td id="td1">15</td>
 			    </tr>
 			    <tr>
-				<td>Gas</td>
-			      <td>5</td>
-			      <td>10</td>
+				<td id="td1">Gas</td>
+			      <td id="td1">5</td>
+			      <td id="td1">10</td>
 			    </tr>
 			  </tbody>
 		</table>
-		    </div>
+		    
 		    
 		    
 		    
