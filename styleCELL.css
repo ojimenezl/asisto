@@ -196,27 +196,7 @@ body {
     background-color: white;
 }
 
-#msg2m {
-    position: absolute;
-    top: 69%;
-    left: 42%;
-    font-family: arial;
-    font-size: 20px;
-}
-#ubilatm {
-    position: absolute;
-    top: 59%;
-    left: 42%;
-    font-family: arial;
-    font-size: 20px;
-}
-#ubilonm {
-    position: absolute;
-    top: 49%;
-    left: 42%;
-    font-family: arial;
-    font-size: 20px;
-}
+
 #startbtn {
     position: absolute;
     top: 45%;
@@ -274,6 +254,27 @@ body {
     top: 0px;
     left: -5000px;
     float: left;
+}
+#ubilatm {
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    font-family: arial;
+    font-size: 20px;
+}
+#ubilonm {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    font-family: arial;
+    font-size: 20px;
+}
+#msg2m {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    font-family: arial;
+    font-size: 20px;
 }
 
 #box2 {
