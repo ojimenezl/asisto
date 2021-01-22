@@ -65,7 +65,7 @@ function validar(frm) {
 				</tr>
 			  </thead>
 			      <?php
-			       $sql="SELECT * FROM `registro`";
+			       $sql="SELECT * FROM `registro` order by hora desc limit 10";
 			       $result=mysqli_query($connect,$sql);
 			  
 			    while($mostrar=mysqli_fetch_array($result)){
