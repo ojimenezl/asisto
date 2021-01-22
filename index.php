@@ -1,4 +1,6 @@
-
+<?php
+$connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
+?>
 <html>
 
 <head>
