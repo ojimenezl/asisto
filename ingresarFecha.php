@@ -122,18 +122,51 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $BBDDIp=$ipuser;
   $BBDLond=$lond;
   $BBDLatd=$latd;
-  $consultaip="SELECT `nombre` FROM `registro` WHERE `ipuser`= '$BBDDIp'";
+  $insertaruser="INSERT INTO `usuario`(`nombre`, `cedula`, `departamento`, `ipuser`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp')";
+  $consultaip="SELECT `nombre` FROM `usuario` WHERE `ipuser`= '$BBDDIp'  limit 1";
   $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
-  
-  // '.$ejecutar2.' $consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
-  $ejecutar=mysqli_query($connect,$consulta);
   $ejecutar2=mysqli_query($connect,$consultaip);
-    if($ejecutar && $ejecutar2){
-     $acumulador="OSCAR";
+   
+   
+   if($ejecutar2){
+     $ejecutar=mysqli_query($connect,$consulta);
+     if($ejecutar){
+     $acumulador=$ejecutar2;
      echo'<script> alert("Tu asistencia  se a guardado con éxito!!")</script>';
+     }else{
+      echo'<script> alert("No se a guardado su asistencia usuario!!")</script>';
+     }
+    
+    
+    
+   }else{
+    $ejecutar3=mysqli_query($connect,$insertaruser);
+    if($ejecutar3){
+     $ejecutar=mysqli_query($connect,$consulta);
+     if($ejecutar){
+     $acumulador=$ejecutar2;
+     echo'<script> alert("Tu asistencia  se a guardado con éxito nuevo!!")</script>';
+     }else{
+      echo'<script> alert("No se a guardado su asistencia!!")</script>';
+     }
+     
+     
+    
     }else{
-      echo'<script> alert("NO Ingresada2")</script>';
+    echo'<script> alert("No se ha podigo guardar su dato!!")</script>';
     }
+    
+   }
+  // '.$ejecutar2.' $consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
+ 
+ 
+//     if($ejecutar && $ejecutar2){
+//      $acumulador="OSCAR";
+//      echo'<script> alert("Tu asistencia  se a guardado con éxito!!")</script>';
+//     }else{
+     
+//       echo'<script> alert("NO Ingresada2")</script>';
+//     }
 
   }else{
     echo'<script> alert("NO Ingresada")</script>';
