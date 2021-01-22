@@ -127,7 +127,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $consultaip="SELECT `nombre` FROM `usuario` WHERE `ipuser`= '$BBDDIp'  limit 1";
   $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
   $ejecutar2=mysqli_query($connect,$consultaip);
-  $mostrar=mysqli_fetch_array($ejecutar2)
+  $mostrar=mysqli_fetch_array($ejecutar2);
    
    if( $mostrar =! null ){
      $ejecutar=mysqli_query($connect,$consulta);
