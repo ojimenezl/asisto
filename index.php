@@ -47,7 +47,7 @@ function validar(frm) {
             
 
             <div id="outputbox">
-                <img src="img.jpg" />
+                <img src="dep2.png" />
 		
             </div>
         </div>
