@@ -145,10 +145,12 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
    }else{
     $ejecutar3=mysqli_query($connect,$insertaruser);
     if($ejecutar3){
-     $ejecutar=mysqli_query($connect,$consulta);
-     if($ejecutar){
-     $acumulador=$ejecutar2;
-     echo'<script> alert("Tu asistencia  se a guardado con éxito nuevo!!")</script>';
+//      $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$acumulador','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
+     $ejecutar2=mysqli_query($connect,$consultaip);
+     $mostrar=mysqli_fetch_array($ejecutar2);
+     $acumulador=$mostrar['nombre'];
+     if($acumulador){
+     echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito nuevo!!")</script>';
      }else{
       echo'<script> alert("No se a guardado su asistencia!!")</script>';
      }
