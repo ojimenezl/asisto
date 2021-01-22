@@ -72,8 +72,8 @@ function validar(frm) {
 			       ?>
 			    <tr>
 			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
-			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
-			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
+			      <td id="td1"><?php echo $mostrar['departamento'] ?></td>
+			      <td id="td1"><?php echo $mostrar['hora'] ?></td>
 			    </tr>
 			<?php
 			       }     
