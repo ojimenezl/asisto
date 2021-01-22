@@ -89,24 +89,25 @@ if($connect!=null ){
 }else{
   echo'<script> alert("NO Conetado")</script>';
 }
-function consultaip($ipuser,$req,$connect){
- if(isset($req)){
-  $BBDip=$ipuser;
-  $consultaip="SELECT `nombre` FROM `registro` WHERE `ipuser`= '$BBDip'";
-  $ejecutar=mysqli_query($connect,$consulta);
-  if($ejecutar){
-     $acumulador="OSCAR";
-     echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito!!")</script>';
 
-    }else{
-      echo'<script> alert("NO Ingresada2")</script>';
-    }
+// function consultaip($ipuser,$req,$connect){
+//  if(isset($req)){
+//   $BBDip=$ipuser;
+//   $consultaip="SELECT `nombre` FROM `registro` WHERE `ipuser`= '$BBDip'";
+//   $ejecutar=mysqli_query($connect,$consulta);
+//   if($ejecutar){
+//      $acumulador="OSCAR";
+//      echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito!!")</script>';
 
-   }else{
-    echo'<script> alert("NO IP")</script>';
-  }
+//     }else{
+//       echo'<script> alert("NO Ingresada2")</script>';
+//     }
 
-}
+//    }else{
+//     echo'<script> alert("NO IP")</script>';
+//   }
+
+// }
 
 
 
@@ -132,7 +133,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
      $ejecutar=mysqli_query($connect,$consulta);
      if($ejecutar){
      $acumulador=$ejecutar2;
-     echo'<script> alert("Tu asistencia - '.$ejecutar2.' -  se a guardado con éxito!!")</script>';
+     echo'<script> alert("Tu asistencia - '.$acumulador.' -  se a guardado con éxito!!")</script>';
      }else{
       echo'<script> alert("No se a guardado su asistencia usuario!!")</script>';
      }
