@@ -127,12 +127,12 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $consultaip="SELECT `nombre` FROM `usuario` WHERE `ipuser`= '$BBDDIp'  limit 1";
   $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
   $ejecutar2=mysqli_query($connect,$consultaip);
+  $mostrar=mysqli_fetch_array($ejecutar2)
    
-   
-   if($ejecutar2 =! 0 ){
+   if( $mostrar =! null ){
      $ejecutar=mysqli_query($connect,$consulta);
      if($ejecutar){
-     $acumulador=$ejecutar2;
+     $acumulador=$mostrar;
      echo'<script> alert("Tu asistencia - '.$acumulador.' -  se a guardado con éxito!!")</script>';
      }else{
       echo'<script> alert("No se a guardado su asistencia usuario!!")</script>';
