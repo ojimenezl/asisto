@@ -125,12 +125,12 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $consultaip="SELECT `nombre` FROM `registro` WHERE `ipuser`= '$BBDDIp'";
   $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
   
-  //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
+  // '.$ejecutar2.' $consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
   $ejecutar=mysqli_query($connect,$consulta);
   $ejecutar2=mysqli_query($connect,$consultaip);
     if($ejecutar && $ejecutar2){
      $acumulador="OSCAR";
-     echo'<script> alert("Tu asistencia '.$ejecutar2.' se a guardado con éxito!!")</script>';
+     echo'<script> alert("Tu asistencia  se a guardado con éxito!!")</script>';
     }else{
       echo'<script> alert("NO Ingresada2")</script>';
     }
