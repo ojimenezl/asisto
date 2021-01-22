@@ -125,12 +125,13 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $BBDLatd=$latd;
   $insertaruser="INSERT INTO `usuario`(`nombre`, `cedula`, `departamento`, `ipuser`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp')";
   $consultaip="SELECT `nombre` FROM `usuario` WHERE `ipuser`= '$BBDDIp'  limit 1";
-  $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$BBDUsuario','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
+ 
   $ejecutar2=mysqli_query($connect,$consultaip);
   $mostrar=mysqli_fetch_array($ejecutar2);
   $acumulador=$mostrar['nombre'];
   echo'<script> alert("AQUIIII - '.$acumulador.' -  se a guardado con éxito!!")</script>';
-   if( $mostrar =! " " ){
+   if( $acumulador =! " " ){
+     $consulta="INSERT INTO `registro`(`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`) VALUES ('$acumulador','$BBDDCedula','$BBDDep','$BBDDIp', '$BBDLond', '$BBDLatd')";
      $ejecutar=mysqli_query($connect,$consulta);
      if($ejecutar){
      $acumulador=$mostrar['nombre'];
