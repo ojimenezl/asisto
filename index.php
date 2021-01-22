@@ -53,9 +53,9 @@ function validar(frm) {
         </div>
 
         <div id="box2">
-		<div id="ttb">
+<!-- 		<div id="ttb"> -->
 
-<table id="table1">
+<!-- <table id="table1">
 
 
 			  <thead>
@@ -69,7 +69,7 @@ function validar(frm) {
 
 			  <tfoot>
 
-			  </tfoot>
+			  </tfoot> -->
 
 <!-- 			  <tbody>
 			    <tr>
@@ -84,9 +84,9 @@ function validar(frm) {
 			    </tr>
 
 			  </tbody> -->
-		</table>
+<!-- 		</table> -->
 		
-		  </div>
+<!-- 		  </div> -->
             <div id="scanner">
                 <button id="stopbtn">Stop</button>
                 <div id="startbtn">
