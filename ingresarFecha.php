@@ -89,6 +89,25 @@ if($connect!=null ){
 }else{
   echo'<script> alert("NO Conetado")</script>';
 }
+function consultaip($ipuser,$req,$connect){
+ if(isset($req)){
+  $BBDip=$ipuser;
+  $consultaip="SELECT `nombre` FROM `registro` WHERE `ipuser`= '$BBDip'";
+  $ejecutar=mysqli_query($connect,$consulta);
+  if($ejecutar){
+     $acumulador="OSCAR";
+     echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito!!")</script>';
+
+    }else{
+      echo'<script> alert("NO Ingresada2")</script>';
+    }
+
+   }else{
+    echo'<script> alert("NO IP")</script>';
+  }
+
+}
+
 
 
 function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
@@ -109,13 +128,13 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   //$consulta="INSERT INTO `usuario` (`nombre`, `usuario`, `cedula`, `correo`, `fecha`, `hora`) VALUES ('9', '9', '9', '9', '9', '2021-01-08 02:00:00')";
   $ejecutar=mysqli_query($connect,$consulta);
 
-  if($ejecutar){
-   $acumulador="OSCAR";
-   echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito!!")</script>';
-   
-  }else{
-    echo'<script> alert("NO Ingresada2")</script>';
-  }
+    if($ejecutar){
+     $acumulador="OSCAR";
+     echo'<script> alert("Tu asistencia '.$ejecutar.' se a guardado con éxito!!")</script>';
+
+    }else{
+      echo'<script> alert("NO Ingresada2")</script>';
+    }
 
   }else{
     echo'<script> alert("NO Ingresada")</script>';
