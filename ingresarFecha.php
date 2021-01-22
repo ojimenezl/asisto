@@ -129,7 +129,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   $ejecutar2=mysqli_query($connect,$consultaip);
    
    
-   if($ejecutar2){
+   if($ejecutar2 !=null ){
      $ejecutar=mysqli_query($connect,$consulta);
      if($ejecutar){
      $acumulador=$ejecutar2;
