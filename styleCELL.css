@@ -23,6 +23,7 @@ body {
 }
 #inputs{
     margin-top: 200px;
+    width: 50%;
 }
 
 #box1 {
@@ -248,21 +249,21 @@ body {
 #ubilatm {
     position: absolute;
     top: 85%;
-    left: 25%;
+    left: 10%;
     font-family: arial;
     font-size: 20px;
 }
 #ubilonm {
     position: absolute;
     top: 80%;
-    left: 25%;
+    left: 10%;
     font-family: arial;
     font-size: 20px;
 }
 #msg2m {
     position: absolute;
     top: 75%;
-    left: 25%;
+    left: 10%;
     font-family: arial;
     font-size: 20px;
 }
@@ -301,7 +302,7 @@ body {
     color: white;
     border-radius: 20px;
     width: 100px;
-    margin-left: 200px;
+    margin-left:100px;
     margin-top: -45px;
     font-size: 18px;
 }
