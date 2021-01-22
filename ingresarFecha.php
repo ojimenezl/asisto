@@ -132,7 +132,7 @@ function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
    if( $mostrar =! " " ){
      $ejecutar=mysqli_query($connect,$consulta);
      if($ejecutar){
-     $acumulador=$mostrar;
+     $acumulador=$mostrar['nombre'];
      echo'<script> alert("Tu asistencia - '.$acumulador.' -  se a guardado con éxito!!")</script>';
      }else{
       echo'<script> alert("No se a guardado su asistencia usuario!!")</script>';
