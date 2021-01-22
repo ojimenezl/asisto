@@ -112,7 +112,7 @@ function consultaip($ipuser,$req,$connect){
 
 function guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect){
   if(isset($req)){
-
+ echo'<script> alert(" éxito!!")</script>';
 //   $BBDNombre=$NombreDato;
   $BBD=$codigoqr;
   $palabras = explode (" ", $BBD);
