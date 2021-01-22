@@ -55,40 +55,35 @@ function validar(frm) {
         </div>
 
         <div id="box2">
-<!-- 		<div id="ttb"> -->
-
-<!-- <table id="table1">
-
-
+		<div id="ttb">
+                       <table id="table1">
 			  <thead>
-			<tr>
-					<th>ID</th>
-					<th>NOMBRE</th>
-					<th>APELLIDO</th>
-
+			         <tr>
+				   <th>ID</th>
+				   <th>NOMBRE</th>
+				   <th>APELLIDO</th>
 				</tr>
 			  </thead>
-
-			  <tfoot>
-
-			  </tfoot> -->
-
-<!-- 			  <tbody>
+			      <?php
+			       $sql="SELECT * from registro";
+			       $result=mysqli_query($connect,$sql);
+			       ?>
+			  
+			    while($mostrar=mysqli_fetch_array($result)){
+			       ?>
 			    <tr>
-				<td id="td1"><?php echo $row['hora'] ?></td>
-
+			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
+			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
+			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
 			    </tr>
-
-			    <tr>
-				<td id="td1">Gas</td>
-			      <td id="td1">5</td>
-			      <td id="td1">10</td>
-			    </tr>
-
-			  </tbody> -->
-<!-- 		</table> -->
+			<?php
+			       }       
+		        ?>
+			       
+			       
+		</table>
 		
-<!-- 		  </div> -->
+		  </div>
             <div id="scanner">
                 <button id="stopbtn">Stop</button>
                 <div id="startbtn">
