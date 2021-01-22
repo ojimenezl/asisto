@@ -65,19 +65,19 @@ function validar(frm) {
 				</tr>
 			  </thead>
 			      <?php
-			       $sql="SELECT * from registro";
+			       $sql="SELECT * FROM `registro`";
 			       $result=mysqli_query($connect,$sql);
 			       ?>
 			  
-<!-- 			    while($mostrar=mysqli_fetch_array($result)){
+			    while($mostrar=mysqli_fetch_array($result)){
 			       ?>
-			    <tr>
+			  <!--   <tr>
 			      <td id="td1"><?//php echo $mostrar['nombre'] ?></td>
 			      <td id="td1"><?//php echo $mostrar['nombre'] ?></td>
 			      <td id="td1"><?//php echo $mostrar['nombre'] ?></td>
 			    </tr> -->
 			<?php
-			      // }       
+			       };       
 		        ?>
 			       
 			       
