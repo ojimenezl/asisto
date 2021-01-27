@@ -111,41 +111,7 @@
 
 
 
-	<?php 
-include ('database.php');
-$clientes = new Database();
-$listado=$clientes->read();
-?>
 
-
-
-<?php 
-while ($row=mysqli_fetch_object($listado)){
-
-$nombres=$row->nombres." ".$row->apellidos;
-$cedula =$row->cedula;
-$departamento=$row->departamento;
-$ipuser=$row->ipuser;
-$latitud=$row->latitud;
-$longitud=$row->longitud;
-$hora =$row->hora;
-?>
-<tr>
-<td><?php echo $nombres;?></td>
-<td><?php echo $cedula;?></td>
-<td><?php echo $departamento;?></td>
-<td><?php echo $ipuser;?></td>
-<td><?php echo $latitud;?></td>
-<td><?php echo $longitud;?></td>
-<td><?php echo $hora;?></td>
-<td>
-<a href="update.php?id=<?php echo $id;?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-<a href="delete.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-</td>
-</tr>	
-<?php
-}
-?>
 
 
 
