@@ -24,8 +24,8 @@ include "iniciosesion.php";
         //$BBDNaci=$NaciDato;
         //$BBDCedula=$CedulaDato;
         //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
-        
-        $consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
+        $consulta = sprintf("SELECT * FROM administrar WHERE email='%s' AND password = '%s'", mysql_real_escape_string($BBDEmail), mysql_real_escape_string($BBDPass));
+        //$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
        
        $ejecutar2=mysqli_query($conn,$consulta);
        $mostrar=mysqli_fetch_array($ejecutar2);
