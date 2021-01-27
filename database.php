@@ -29,7 +29,7 @@
           
           public function create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora){
               
-              $sql = "INSERT INTO `registro` (`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`, `hora`) VALUES ('$nombres', '$apellidos', '$telefono', '$direccion', '$correo_electronico')";
+              $sql = "INSERT INTO `registro` (`nombre`, `cedula`, `departamento`, `ipuser`, `latitud`, `longitud`, `hora`) VALUES ('$nombres','$cedula','$departamento','$ipuser','$latitud','$longitud','$hora')";
               $res = mysqli_query($this->con, $sql);
               if($res){
                 return true;
