@@ -30,11 +30,11 @@
 				if(isset($_POST) && !empty($_POST)){
 
 					$nombres = $clientes->sanitize($_POST['nombres']);
-					$cedula = $clientes->sanitize($_POST['cedula ']);
+					$cedula = $clientes->sanitize($_POST['cedula']);
 					$departamento = $clientes->sanitize($_POST['departamento']);
-                    $ipuser = $clientes->sanitize($_POST['ipuser']);
-                    $latitud= $clientes->sanitize($_POST['latitud']);
-                    $longitud= $clientes->sanitize($_POST['longitud']);
+				        $ipuser = $clientes->sanitize($_POST['ipuser']);
+				        $latitud= $clientes->sanitize($_POST['latitud']);
+				        $longitud= $clientes->sanitize($_POST['longitud']);
 					$hora = $clientes->sanitize($_POST['hora']);
 					
 					$res = $clientes->create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora);
@@ -86,7 +86,7 @@
 					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required>
                 </div>
                 
-				<div class="col-md-12">
+<!-- 				<div class="col-md-12">
 					<label>Dirección:</label>
 					<textarea  name="direccion" id="direccion" class='form-control' maxlength="255" required></textarea>
 				</div>
@@ -98,7 +98,7 @@
 					<label>Correo electrónico:</label>
 					<input type="email" name="correo_electronico" id="correo_electronico" class='form-control' maxlength="64" required>
 				
-				</div>
+				</div> -->
 				
 				<div class="col-md-12 pull-right">
 				<hr>
