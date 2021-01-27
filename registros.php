@@ -24,7 +24,36 @@
                     </div>
                 </div>
             </div>
- 
+            <?php
+				include ("database.php");
+				$clientes= new Database();
+				if(isset($_POST) && !empty($_POST)){
+
+					$nombres = $clientes->sanitize($_POST['nombres']);
+					$cedula = $clientes->sanitize($_POST['cedula ']);
+					$departamento = $clientes->sanitize($_POST['departamento']);
+                    $ipuser = $clientes->sanitize($_POST['ipuser']);
+                    $latitud= $clientes->sanitize($_POST['latitud']);
+                    $longitud= $clientes->sanitize($_POST['longitud']);
+					$hora = $clientes->sanitize($_POST['hora']);
+					
+					$res = $clientes->create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora);
+					if($res){
+						$message= "Datos insertados con éxito";
+						$class="alert alert-success";
+					}else{
+						$message="No se pudieron insertar los datos";
+						$class="alert alert-danger";
+					}
+					
+					?>
+				<div class="<?php echo $class?>">
+				  <?php echo $message;?>
+				</div>	
+					<?php
+				}
+	
+			?>
 			<div class="row">
 				<form method="post">
 				<div class="col-md-6">
@@ -32,9 +61,31 @@
 					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required >
 				</div>
 				<div class="col-md-6">
-					<label>Apellidos:</label>
-					<input type="text" name="apellidos" id="apellidos" class='form-control' maxlength="100" required>
-				</div>
+					<label>Cédula:</label>
+					<input type="text" name="cedula" id="cedula" class='form-control' maxlength="100" required>
+                </div>
+                <div class="col-md-6">
+					<label>Departamento:</label>
+					<input type="text" name="departamento" id="departamento" class='form-control' maxlength="100" required>
+                </div>
+                <div class="col-md-6">
+					<label>ipuser:</label>
+					<input type="text" name="ipuser" id="ipuser" class='form-control' maxlength="100" required>
+                </div>
+
+                <div class="col-md-6">
+					<label>latitud:</label>
+					<input type="text" name="latitud" id="latitud" class='form-control' maxlength="100" required>
+                </div>
+                <div class="col-md-6">
+					<label>longitud:</label>
+					<input type="text" name="longitud" id="longitud" class='form-control' maxlength="100" required>
+                </div>
+                <div class="col-md-6">
+					<label>hora:</label>
+					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required>
+                </div>
+                
 				<div class="col-md-12">
 					<label>Dirección:</label>
 					<textarea  name="direccion" id="direccion" class='form-control' maxlength="255" required></textarea>
