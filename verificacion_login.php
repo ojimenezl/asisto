@@ -24,7 +24,7 @@ include "iniciosesion.php";
         //$BBDNaci=$NaciDato;
         //$BBDCedula=$CedulaDato;
         //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
-       echo'<script> alert("'.$BBDEmail.'")</script>';
+       echo'<script> alert("'.$email.'")</script>';
        echo'<script> alert("'.$BBDPass.'")</script>';
         $consulta = "SELECT * FROM administrar WHERE email='$BBDEmail' AND password = '$BBDPass'";
         //$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
