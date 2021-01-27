@@ -27,8 +27,11 @@ include "iniciosesion.php";
         
         $consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjjj-456@hotmail.com' and `password`='o1234'";
         $ejecutar=mysqli_query($conn,$consulta);
+       $ejecutar2=mysqli_query($connect,$consultaip);
+       $mostrar=mysqli_fetch_array($ejecutar2);
+       $acumulador=$mostrar['email'];
       
-        if($ejecutar){
+        if($acumulador){
          echo'<script> alert("Fecha Ingresada")</script>';
          header('Location: http://localhost/registros.php');
          
