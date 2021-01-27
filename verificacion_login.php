@@ -51,28 +51,4 @@ include "iniciosesion.php";
 }
 ?>
 
-<!-- 
-$req=$_REQUEST['ingresar'];
 
-$BBDEmail=$email;
- $BBDPass=$password;
-  // Consulta segura para evitar inyecciones SQL.
-  //$sql = sprintf("SELECT * FROM administrar WHERE email='%s' AND password = '%s'", mysql_real_escape_string($BBDEmail), mysql_real_escape_string($BBDPass));
- // $sql="SELECT `nombre` FROM `usuario` WHERE `ipuser`= '$BBDDIp'  limit 1";
-  $sql="SELECT * FROM `administrar` WHERE `email`='oscarj-456@hotmail.com' and `password`='o1234'";
-  echo'<script> alert("'.$conn.'")</script>';
-  echo'<script> alert("'.$sql.'")</script>';
-  $resultado = mysqli_query($conn,$sql);
-  echo'<script> alert("'.$resultado.'")</script>';
-  // Verificando si el usuario existe en la base de datos.
-  if($resultado){
-    // Guardo en la sesión el email del usuario.
-    $_SESSION['email'] = $BBDEmail;
-     
-    // Redirecciono al usuario a la página principal del sitio.
-    // header("HTTP/1.1 302 Moved Temporarily"); 
-    // header("Location: principal.php"); 
-    header('Location: http://localhost/registros.php');
-  }else{
-    echo'<script> alert("Conectado1234 NO")</script>';
-  } -->
