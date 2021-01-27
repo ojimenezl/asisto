@@ -16,7 +16,7 @@ include "iniciosesion.php";
     echo'<script> alert("Conectado1234")</script>';
     $req=$_REQUEST['ingresar'];
     if(isset($req)){
-
+     echo'<script> alert("Conectado4")</script>';
         $BBDEmail=$email;
         $BBDPass=$password;
         //$BBDUsuario=$UsuarioDato;
@@ -24,7 +24,7 @@ include "iniciosesion.php";
         //$BBDNaci=$NaciDato;
         //$BBDCedula=$CedulaDato;
         //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
-        $consulta = sprintf("SELECT * FROM administrar WHERE email='%s' AND password = '%s'", mysql_real_escape_string($BBDEmail), mysql_real_escape_string($BBDPass));
+        $consulta = "SELECT * FROM administrar WHERE email='%s' AND password = '%s'", mysql_real_escape_string($BBDEmail), mysql_real_escape_string($BBDPass);
         //$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
        
        $ejecutar2=mysqli_query($conn,$consulta);
