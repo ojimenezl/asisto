@@ -24,8 +24,8 @@ include "iniciosesion.php";
         //$BBDNaci=$NaciDato;
         //$BBDCedula=$CedulaDato;
         //$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
-       echo'<script> alert("'.$email.'")</script>';
-       echo'<script> alert("'.$BBDPass.'")</script>';
+//        echo'<script> alert("'.$email.'")</script>';
+//        echo'<script> alert("'.$BBDPass.'")</script>';
         $consulta = "SELECT * FROM administrar WHERE email='$BBDEmail' AND password = '$BBDPass'";
         //$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
        
@@ -34,7 +34,8 @@ include "iniciosesion.php";
        $acumulador=$mostrar['email'];
       
         if($acumulador){
-         echo'<script> alert("Fecha Ingresada")</script>';
+         echo'<script> alert("Bienvenido!!")</script>';
+         $_SESSION['email'] = $BBDEmail;
          header('Location: http://localhost/registros.php');
          
         }else{
