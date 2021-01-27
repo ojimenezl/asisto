@@ -19,11 +19,11 @@
 
   <form action="verificacion_login.php" method="post" accept-charset="utf-8">
     <div class="group">
-      <input id="email" type="email"><span class="highlight"></span><span class="bar"></span>
+      <input id="email" name="email" type="email"><span class="highlight"></span><span class="bar"></span>
       <label>Email</label>
     </div>
     <div class="group">
-      <input id="password" type="password"><span class="highlight"></span><span class="bar"></span>
+      <input id="password" name="password" type="password"><span class="highlight"></span><span class="bar"></span>
       <label>Contraseña</label>
     </div>
     <input type="submit" name="ingresar" value="ingresar" />
