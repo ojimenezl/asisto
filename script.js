@@ -166,13 +166,13 @@ function showError(error){
                         } else {
                             alert("Su cámara delantera no funciona");
                         }
-                    } else if ($(this).val() == 2) {
-                        if (cameras[1] != "") {
-                            scanner.start(cameras[1]);
-                        } else {
-                            alert("Su cámara trasera no funciona");
-                        }
-                    }
+//                     } else if ($(this).val() == 2) {
+//                         if (cameras[1] != "") {
+//                             scanner.start(cameras[1]);
+//                         } else {
+//                             alert("Su cámara trasera no funciona");
+//                         }
+//                     }
                 });
             } else {
                 alert("Su cámara no funciona");
