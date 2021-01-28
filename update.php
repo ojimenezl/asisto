@@ -39,12 +39,14 @@
 				
 				if(isset($_POST) && !empty($_POST)){
 					$nombres = $clientes->sanitize($_POST['nombres']);
-					$apellidos = $clientes->sanitize($_POST['apellidos']);
-					$telefono = $clientes->sanitize($_POST['telefono']);
-					$direccion = $clientes->sanitize($_POST['direccion']);
-					$correo_electronico = $clientes->sanitize($_POST['correo_electronico']);
-					$id_cliente=intval($_POST['id_cliente']);
-					$res = $clientes->update($nombres, $apellidos, $telefono, $direccion, $correo_electronico,$id_cliente);
+					$cedula = $clientes->sanitize($_POST['cedula']);
+					$departamento = $clientes->sanitize($_POST['departamento']);
+				    	$ipuser = $clientes->sanitize($_POST['ipuser']);
+				    	$latitud= $clientes->sanitize($_POST['latitud']);
+				    	$longitud= $clientes->sanitize($_POST['longitud']);
+					$hora = $clientes->sanitize($_POST['hora']);
+					
+					$res = $clientes->create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora);
 					if($res){
 						$message= "Datos actualizados con éxito";
 						$class="alert alert-success";
@@ -62,38 +64,60 @@
 				}
 				$datos_cliente=$clientes->single_record($id);
 			?>
-			<div class="row">
+						<div class="row">
 				<form method="post">
 				<div class="col-md-6">
 					<label>Nombres:</label>
-					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required  value="<?php echo $datos_cliente->nombres;?>">
-					<input type="hidden" name="id_cliente" id="id_cliente" class='form-control' maxlength="100"   value="<?php echo $datos_cliente->id;?>">
+					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>" >
 				</div>
 				<div class="col-md-6">
-					<label>Apellidos:</label>
-					<input type="text" name="apellidos" id="apellidos" class='form-control' maxlength="100" required value="<?php echo $datos_cliente->apellidos;?>">
+					<label>Cédula:</label>
+					<input type="text" name="cedula" id="cedula" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                    <!-- <input type="hidden" name="id_cliente" id="id_cliente" class='form-control' maxlength="100"   value="<?php echo $datos_cliente->id;?>"> -->
 				</div>
-				<div class="col-md-12">
+                <div class="col-md-6">
+					<label>Departamento:</label>
+					<input type="text" name="departamento" id="departamento" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                </div>
+                <div class="col-md-6">
+					<label>ipuser:</label>
+					<input type="text" name="ipuser" id="ipuser" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                </div>
+
+                <div class="col-md-6">
+					<label>latitud:</label>
+					<input type="text" name="latitud" id="latitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                </div>
+                <div class="col-md-6">
+					<label>longitud:</label>
+					<input type="text" name="longitud" id="longitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                </div>
+                <div class="col-md-6">
+					<label>hora:</label>
+					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+                </div>
+                
+<!-- 				<div class="col-md-12">
 					<label>Dirección:</label>
-					<textarea  name="direccion" id="direccion" class='form-control' maxlength="255" required><?php echo $datos_cliente->direccion;?></textarea>
+					<textarea  name="direccion" id="direccion" class='form-control' maxlength="255" required></textarea>
 				</div>
 				<div class="col-md-6">
 					<label>Teléfono:</label>
-					<input type="text" name="telefono" id="telefono" class='form-control' maxlength="15" required value="<?php echo $datos_cliente->telefono;?>">
+					<input type="text" name="telefono" id="telefono" class='form-control' maxlength="15" required >
 				</div>
 				<div class="col-md-6">
 					<label>Correo electrónico:</label>
-					<input type="email" name="correo_electronico" id="correo_electronico" class='form-control' maxlength="64" required value="<?php echo $datos_cliente->correo_electronico;?>">
+					<input type="email" name="correo_electronico" id="correo_electronico" class='form-control' maxlength="64" required>
 				
-				</div>
+				</div> -->
 				
 				<div class="col-md-12 pull-right">
 				<hr>
-					<button type="submit" class="btn btn-success">Actualizar datos</button>
+					<button type="submit" class="btn btn-success">Guardar datos</button>
 				</div>
 				</form>
 			</div>
         </div>
-    </div>     
+    </div>
 </body>
 </html>
