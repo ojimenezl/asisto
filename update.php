@@ -45,8 +45,8 @@
 				    	$latitud= $clientes->sanitize($_POST['latitud']);
 				    	$longitud= $clientes->sanitize($_POST['longitud']);
 					$hora = $clientes->sanitize($_POST['hora']);
-					
-					$res = $clientes->create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora);
+					$id_cliente=intval($_POST['id']);
+					$res = $clientes->update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora);
 					if($res){
 						$message= "Datos actualizados con éxito";
 						$class="alert alert-success";
