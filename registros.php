@@ -115,7 +115,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	
 	
-	                    <table>
+	                    <table class="table table-bordered">
 			  <thead>
 			         <tr>
 				   <th>ID</th>
