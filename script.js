@@ -127,34 +127,7 @@ function showError(error){
      let constraints;
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-    if (iOS) {
-      constraints = {
-        audio: false,
-        video: {
-          facingMode: 'environment',
-          mandatory: {
-            sourceId: this.id,
-            minWidth: 600,
-            maxWidth: 800,
-            minAspectRatio: 1.6
-          },
-          optional: []
-        }
-      };
-    } else {
-      constraints = {
-        audio: false,
-        video: {
-          mandatory: {
-            sourceId: this.id,
-            minWidth: 600,
-            maxWidth: 800,
-            minAspectRatio: 1.6
-          },
-          optional: []
-        }
-      }
-    }
+
 
         Instascan.Camera.getCameras().then(function(cameras) {
             if (cameras.length > 0) {
@@ -162,17 +135,73 @@ function showError(error){
                 $('[name="options"]').on('change', function() {
                     if ($(this).val() == 1) {
                         if (cameras[0] != "") {
+				    if (iOS) {
+				      constraints = {
+					audio: false,
+					video: {
+					  facingMode: 'environment',
+					  mandatory: {
+					    sourceId: this.id,
+					    minWidth: 600,
+					    maxWidth: 800,
+					    minAspectRatio: 1.6
+					  },
+					  optional: []
+					}
+				      };
+				    } else {
+				      constraints = {
+					audio: false,
+					video: {
+					  mandatory: {
+					    sourceId: this.id,
+					    minWidth: 600,
+					    maxWidth: 800,
+					    minAspectRatio: 1.6
+					  },
+					  optional: []
+					}
+				      }
+				    }
                             scanner.start(cameras[1]);
                         } else {
                             alert("Su cámara delantera no funciona");
                         }
-//                     } else if ($(this).val() == 2) {
-//                         if (cameras[1] != "") {
-//                             scanner.start(cameras[1]);
-//                         } else {
-//                             alert("Su cámara trasera no funciona");
-//                         }
-//                     }
+                    } else if ($(this).val() == 2) {
+                        if (cameras[1] != "") {
+                            scanner.start(cameras[1]);
+				    if (iOS) {
+				      constraints = {
+					audio: false,
+					video: {
+					  facingMode: 'environment',
+					  mandatory: {
+					    sourceId: this.id,
+					    minWidth: 600,
+					    maxWidth: 800,
+					    minAspectRatio: 1.6
+					  },
+					  optional: []
+					}
+				      };
+				    } else {
+				      constraints = {
+					audio: false,
+					video: {
+					  mandatory: {
+					    sourceId: this.id,
+					    minWidth: 600,
+					    maxWidth: 800,
+					    minAspectRatio: 1.6
+					  },
+					  optional: []
+					}
+				      }
+				    }
+                        } else {
+                            alert("Su cámara trasera no funciona");
+                        }
+                    }
                 });
             } else {
                 alert("Su cámara no funciona");
