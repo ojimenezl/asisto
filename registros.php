@@ -117,8 +117,8 @@ $listado=$clientes->read();
 
 <?php 
 while ($row=mysqli_fetch_object($listado)){
-
-$nombres=$row->nombres." ".$row->apellidos;
+$id=$row->id;
+$nombres=$row->nombres;
 $cedula =$row->cedula;
 $departamento=$row->departamento;
 $ipuser=$row->ipuser;
