@@ -109,7 +109,11 @@
         </div>
     </div>   
 
-
+<?php 
+include ('database.php');
+$clientes = new Database();
+$listado=$clientes->read();
+?>
 
 <?php 
 while ($row=mysqli_fetch_object($listado)){
