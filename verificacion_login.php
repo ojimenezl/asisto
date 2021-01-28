@@ -36,7 +36,7 @@ include "iniciosesion.php";
         if($acumulador){
          echo'<script> alert("Bienvenido!!")</script>';
          $_SESSION['email'] = $BBDEmail;
-         header('Location: http://localhost/registros.php');
+         header('Location: https://asisto.herokuapp.com/registros.php');
          
         }else{
           echo'<script> alert("NO Ingresada")</script>';
