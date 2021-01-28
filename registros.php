@@ -108,6 +108,44 @@
 			</div>
         </div>
     </div>   
+	
+	
+	
+	                    <table id="table1">
+			  <thead>
+			         <tr>
+				   <th>ID</th>
+				   <th>NOMBRE</th>
+				   <th>APELLIDO</th>
+				</tr>
+			  </thead>
+			      <?php
+			       $sql="SELECT * FROM `registro` order by hora desc limit 10";
+			       $result=mysqli_query($connect,$sql);
+			  
+			    while($mostrar=mysqli_fetch_array($result)){
+			       ?>
+			    <tr>
+			      <td id="td1"><?php echo $mostrar['nombre'] ?></td>
+			      <td id="td1"><?php echo $mostrar['departamento'] ?></td>
+			      <td id="td1"><?php echo $mostrar['hora'] ?></td>
+			    </tr>
+			<?php
+			       }     
+		        ?>
+			       
+			       
+		</table>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <?php 
 include ('database.php');
 $clientes = new Database();
