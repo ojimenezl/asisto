@@ -109,43 +109,7 @@
         </div>
     </div>   
 
-<?php 
-include ('database.php');
-$clientes = new Database();
-$listado=$clientes->read();
-?>
 
-<!-- <?php 
-// while ($row=mysqli_fetch_object($listado)){
-// $id=$row->id;
-// $nombres=$row->nombres;
-// $cedula =$row->cedula;
-// $departamento=$row->departamento;
-// $ipuser=$row->ipuser;
-// $latitud=$row->latitud;
-// $longitud=$row->longitud;
-// $hora =$row->hora;
-?> -->
-	
-	
-<!-- <tr>
-
-
-
-
-
-
-
-<td>
-
-
-
-
-</td>
-</tr>	 -->
-<!-- <?php
-// }
-?> -->
 
 
 
