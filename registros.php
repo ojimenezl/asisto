@@ -125,13 +125,17 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
                 </div>
             </div>
 	                    <table class="table table-bordered">
-			  <thead>
-			         <tr>
-				   <th>ID</th>
-				   <th>NOMBRE</th>
-				   <th>APELLIDO</th>
-				</tr>
-			  </thead>
+				<thead>
+				    <tr>
+					<th>Nombres</th>
+					<th>cedula</th>
+					<th>departamento</th>
+					<th>ipuser</th>
+					<th>latitud</th>
+					<th>longitud</th>
+					<th>hora</th>
+				    </tr>
+				</thead>
 			      <?php
 			       $sql="SELECT * FROM `registro` order by hora desc limit 10";
 			       $result=mysqli_query($connect,$sql);
