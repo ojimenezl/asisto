@@ -150,18 +150,7 @@ function showError(error){
 					}
 				      };
 				    } else {
-				      constraints = {
-					audio: false,
-					video: {
-					  mandatory: {
-					    sourceId: this.id,
-					    minWidth: 600,
-					    maxWidth: 800,
-					    minAspectRatio: 1.6
-					  },
-					  optional: []
-					}
-				      }
+					scanner.start(cameras[1]);
 				    }
                             scanner.start(cameras[1]);
                         } else {
@@ -169,7 +158,7 @@ function showError(error){
                         }
                     } else if ($(this).val() == 2) {
                         if (cameras[1] != "") {
-                            scanner.start(cameras[1]);
+                            
 				    if (iOS) {
 				      constraints = {
 					audio: false,
@@ -185,18 +174,7 @@ function showError(error){
 					}
 				      };
 				    } else {
-				      constraints = {
-					audio: false,
-					video: {
-					  mandatory: {
-					    sourceId: this.id,
-					    minWidth: 600,
-					    maxWidth: 800,
-					    minAspectRatio: 1.6
-					  },
-					  optional: []
-					}
-				      }
+					scanner.start(cameras[1]);
 				    }
                         } else {
                             alert("Su cámara trasera no funciona");
