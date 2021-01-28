@@ -39,7 +39,7 @@
 		  }
 		  
 		  public function read(){
-			$sql = "SELECT `nombre` FROM `registro`";
+			$sql = "SELECT `cedula` FROM `registro`";
 			$res = mysqli_query($this->con, $sql);
 			return $res;
 			}
