@@ -39,7 +39,7 @@
 		  }
 		  
 		  public function read(){
-			$sql = "SELECT * FROM registro";
+			$sql = "SELECT * FROM `registro`";
 			$res = mysqli_query($this->con, $sql);
 			return $res;
 			}
