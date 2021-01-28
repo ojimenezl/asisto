@@ -117,8 +117,8 @@ $listado=$clientes->read();
 <?php 
 while ($row=mysqli_fetch_object($listado)){
 // $id=$row->id;
-$nombres=$row->nombres;
-// $cedula =$row->cedula;
+// $nombres=$row->nombres;
+$cedula =$row->cedula;
 // $departamento=$row->departamento;
 // $ipuser=$row->ipuser;
 // $latitud=$row->latitud;
@@ -128,7 +128,8 @@ $nombres=$row->nombres;
 	
 	
 <tr>
-<td><?php echo $nombres;?></td>
+
+<td><?php echo $cedula;?></td>
 
 
 <td>
@@ -147,36 +148,7 @@ $nombres=$row->nombres;
 
 
 
-	<div class="container">
-        <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-8"><h2>Listado de  <b>Clientes</b></h2></div>
-                    <div class="col-sm-4">
-                        <a href="create.php" class="btn btn-info add-new"><i class="fa fa-plus"></i> Agregar cliente</a>
-                    </div>
-                </div>
-            </div>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Nombres</th>
-                        <th>cedula</th>
-                        <th>departamento</th>
-						<th>ipuser</th>
-                        <th>latitud</th>
-						<th>longitud</th>
-                        <th>hora</th>
-                    </tr>
-                </thead>
-                 
-                <tbody>    
-                          
-                </tbody>
-            </table>
-        </div>
-    </div>     
-
+	
 
 </body>
 </html>
