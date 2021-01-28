@@ -86,7 +86,7 @@
 					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required>
                 </div>
                 
-<!-- 				<div class="col-md-12">
+				<div class="col-md-12">
 					<label>Dirección:</label>
 					<textarea  name="direccion" id="direccion" class='form-control' maxlength="255" required></textarea>
 				</div>
@@ -98,9 +98,9 @@
 					<label>Correo electrónico:</label>
 					<input type="email" name="correo_electronico" id="correo_electronico" class='form-control' maxlength="64" required>
 				
-				</div> -->
+				</div>
 				
-<!-- 				<div class="col-md-12 pull-right">
+				<div class="col-md-12 pull-right">
 				<hr>
 					<button type="submit" class="btn btn-success">Guardar datos</button>
 				</div>
@@ -144,7 +144,7 @@
             </table>
         </div>
     </div>     
- -->
+
 
 </body>
 </html>
