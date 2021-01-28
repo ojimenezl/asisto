@@ -144,40 +144,6 @@
 	
 	
 	
-	
-	
-<?php 
-include ('database.php');
-$clientes = new Database();
-$listado=$clientes->read();
-?>
-
-<?php 
-while ($row=mysqli_fetch_object($listado)){
-
-?>
-	
-	
-<tr>
-
-			      <td id="td1"><?php echo $row['cedula'] ?></td>
-
-
-
-
-
-
-<td>
-
-<a href="update.php?id=<?php echo $id;?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-<a href="delete.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-
-
-</td>
-</tr>	
-<?php
-}
-?>
 
 
 
