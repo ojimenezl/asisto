@@ -131,8 +131,13 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 			       ?>
 			    <tr>
 			      <td ><?php echo $mostrar['nombre'] ?></td>
+			       <td><?php echo $mostrar['cedula']?></td>
 			      <td ><?php echo $mostrar['departamento'] ?></td>
+			      <td><?php echo $mostrar['ipuser']?></td>
+			      <td><?php echo $mostrar['latitud']?></td>
+			      <td><?php echo $mostrar['longitud']?></td>
 			      <td ><?php echo $mostrar['hora'] ?></td>
+
 			      <td>
 				<a href="update.php?id=<?php echo $id;?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
 				<a href="delete.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
