@@ -100,7 +100,7 @@
 				
 				</div> -->
 				
-				<div class="col-md-12 pull-right">
+<!-- 				<div class="col-md-12 pull-right">
 				<hr>
 					<button type="submit" class="btn btn-success">Guardar datos</button>
 				</div>
@@ -144,7 +144,7 @@
             </table>
         </div>
     </div>     
-
+ -->
 
 </body>
 </html>
