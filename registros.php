@@ -114,7 +114,16 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
     </div>   
 	
 	
-	
+	 <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Listado de  <b>Clientes</b></h2></div>
+                    <div class="col-sm-4">
+                        <a href="create.php" class="btn btn-info add-new"><i class="fa fa-plus"></i> Agregar cliente</a>
+                    </div>
+                </div>
+            </div>
 	                    <table class="table table-bordered">
 			  <thead>
 			         <tr>
@@ -149,6 +158,8 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 			       
 			       
 		</table>
+		        </div>
+    </div> 
 	
 	
 	
