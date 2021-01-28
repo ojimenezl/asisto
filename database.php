@@ -26,6 +26,22 @@
             return $return;
           }
           
+
+		public function single_record($id){
+			$sql = "SELECT * FROM clientes where id='$id'";
+			$res = mysqli_query($this->con, $sql);
+			$return = mysqli_fetch_object($res );
+			return $return ;
+		}
+		public function update($nombres,$apellidos,$telefono,$direccion,$correo_electronico, $id){
+			$sql = "UPDATE clientes SET nombres='$nombres', apellidos='$apellidos', telefono='$telefono', direccion='$direccion', correo_electronico='$correo_electronico' WHERE id=$id";
+			$res = mysqli_query($this->con, $sql);
+			if($res){
+				return true;
+			}else{
+				return false;
+			}
+		}
           
           public function create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora){
               
