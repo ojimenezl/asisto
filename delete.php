@@ -1,5 +1,6 @@
 
 <?php 
+echo "hola";
 if (isset($_GET['id'])){
 	include('database.php');
 	$cliente = new Database();
