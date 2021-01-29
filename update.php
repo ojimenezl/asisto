@@ -68,34 +68,34 @@
 				<form method="post">
 				<div class="col-md-6">
 					<label>Nombres:</label>
-					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>" >
+					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre']?>" >
 				        <input type="hidden" name="id" id="id" class='form-control' maxlength="100"   value="<?php $datos_cliente['id'];?>">
 					</div>
 				<div class="col-md-6">
 					<label>Cédula:</label>
-					<input type="text" name="cedula" id="cedula" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="cedula" id="cedula" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['cedula']?>">
 
 				</div>
                 <div class="col-md-6">
 					<label>Departamento:</label>
-					<input type="text" name="departamento" id="departamento" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="departamento" id="departamento" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['departamento']?>">
                 </div>
                 <div class="col-md-6">
 					<label>ipuser:</label>
-					<input type="text" name="ipuser" id="ipuser" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="ipuser" id="ipuser" class='form-control' maxlength="100" required value="<?php echo $datos_cliente->ipuser?>">
                 </div>
 
                 <div class="col-md-6">
 					<label>latitud:</label>
-					<input type="text" name="latitud" id="latitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="latitud" id="latitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre']?>">
                 </div>
                 <div class="col-md-6">
 					<label>longitud:</label>
-					<input type="text" name="longitud" id="longitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="longitud" id="longitud" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre']?>">
                 </div>
                 <div class="col-md-6">
 					<label>hora:</label>
-					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>">
+					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre']?>">
                 </div>
                 
 <!-- 				<div class="col-md-12">
