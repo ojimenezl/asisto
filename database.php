@@ -19,6 +19,10 @@
 				die("Conexión a la base de datos falló " . mysqli_connect_error() . mysqli_connect_errno());
 			}
         }
+        public function sanitize($var){
+            $return = mysqli_real_escape_string($this->con, $var);
+            return $return;
+          }
         
         public function delete($id){
 		$sql = "DELETE FROM `registro` WHERE `id`='$id'";
@@ -28,11 +32,8 @@
 		}else{
 		return false;
 		}
-	}
-        public function sanitize($var){
-            $return = mysqli_real_escape_string($this->con, $var);
-            return $return;
-          }
+	    }
+
           
 
 		public function single_record($id){
@@ -40,7 +41,8 @@
 			$res = mysqli_query($this->con, $sql);
 			$return = mysqli_fetch_object($res );
 			return $return ;
-		}
+        }
+        
 		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id_c){
 			$sql = "UPDATE `registro` SET `nombre`='$nombres',`cedula`='$cedula',`departamento`='$departamento',`ipuser`='$ipuser',`latitud`='$latitud',`longitud`='$longitud',`hora`='$hora' WHERE
 			`id`='$id_c'";
