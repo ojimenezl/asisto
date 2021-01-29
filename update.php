@@ -69,7 +69,7 @@
 				<div class="col-md-6">
 					<label>Nombres:</label>
 					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required value="<?php echo $datos_cliente['nombre'];?>" >
-				        <input type="hidden" name="id" id="id" class='form-control' maxlength="100"   value="<?php echo $datos_cliente->id;?>">
+				        <input type="hidden" name="id" id="id" class='form-control' maxlength="100"   value="<?php $datos_cliente['id'];?>">
 					</div>
 				<div class="col-md-6">
 					<label>Cédula:</label>
