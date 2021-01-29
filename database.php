@@ -21,7 +21,7 @@
         }
         
         public function delete($id){
-		$sql = "DELETE FROM `registro` WHERE `id`=$id";
+		$sql = "DELETE FROM `registro` WHERE `id`='$id'";
 		$res = mysqli_query($this->con, $sql);
 		if($res){
 		return true;
