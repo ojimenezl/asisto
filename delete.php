@@ -3,7 +3,7 @@
 if (isset($_GET['id'])){
 	include('database.php');
 	$cliente = new Database();
-	$id=sanitize($_GET['id']);
+	$id=intval($_GET['id']);
 	echo'<script> alert("ID - '.$id.' -  se a guardado con éxito!!")</script>';
 	$res = $cliente->delete($id);
 	if($res){
