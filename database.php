@@ -43,7 +43,7 @@
 			return $return ;
         }
         
-		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id_c){
+		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id){
 			$sql = "UPDATE `registro` SET `nombre`='$nombres',`cedula`='$cedula',`departamento`='$departamento',`ipuser`='$ipuser',`latitud`='$latitud',`longitud`='$longitud',`hora`='$hora' WHERE
 			`id`='$id_c'";
 			 
