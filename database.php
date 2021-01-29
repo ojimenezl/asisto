@@ -20,7 +20,15 @@
 			}
         }
         
-
+        public function delete($id){
+		$sql = "DELETE FROM `registro` WHERE `id`=$id";
+		$res = mysqli_query($this->con, $sql);
+		if($res){
+		return true;
+		}else{
+		return false;
+		}
+	}
         public function sanitize($var){
             $return = mysqli_real_escape_string($this->con, $var);
             return $return;
