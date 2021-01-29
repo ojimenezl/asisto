@@ -152,8 +152,8 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 			      <td ><?php echo $mostrar['hora'] ?></td>
 
 			      <td>
-				<a href="update.php?id=<?php echo $id;?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-				<a href="delete.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+				<a href="update.php?id=<?php echo $mostrar['id'];?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+				<a href="delete.php?id=<?php echo $mostrar['id'];?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                               </td>
 			    </tr>
 			<?php
