@@ -19,7 +19,7 @@ limitations under the License.
 <html lang="en">
 <head>
 
-<script>
+<script type="9861014900b715bb88e4ef9b-text/javascript">
 //  philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build
 window.ga = window.ga || function() {
   (ga.q = ga.q || []).push(arguments);
@@ -28,7 +28,7 @@ ga('create', 'UA-33848682-1', 'auto');
 ga('set', 'transport', 'beacon');
 ga('send', 'pageview');
 </script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="https://www.google-analytics.com/analytics.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
 
 <meta charset="utf-8">
 <meta name="description" content="Simplest possible examples of HTML, CSS and JavaScript.">
@@ -43,69 +43,57 @@ ga('send', 'pageview');
 <base target="_blank">
 
 
-<title>getUserMedia</title>
+<title>mediaDevices.enumerateDevices()</title>
 
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../../css/main.css">
 
-  <style>
-    video {
-      object-fit: cover;
-    }
-
-    @media (min-width: 1000px) {
-      video {
-        height: 480px;
-      }
-    }
-  </style>
+<style>
+h1 {
+  margin: 0 0 24px 0;
+}
+select {
+  width: 150px;
+}
+video {
+  margin: 10px 0 0 0;
+}
+</style>
 
 </head>
 
 <body>
 
-  <div id="container">
+<div id="container">
     
     <section id="george-floyd">
       <a href="https://en.wikipedia.org/wiki/George_Floyd" title="Wikipedia entry for George Floyd" id="name">
-        <img src="../images/george-floyd.jpg" alt="George Floyd">
+        <img src="../../images/george-floyd.jpg" alt="George Floyd">
       </a>
       <a href="https://en.wikipedia.org/wiki/George_Floyd" title="Wikipedia entry for George Floyd" id="name">George Floyd</a>
       <a href="https://secure.actblue.com/donate/naacp-1" id="dates">October 14, 1973 –&nbsp;May&nbsp;25,&nbsp;2020</a> 
     </section>
 
-    <!-- <div id="highlight">
-      <p>Check out my new article: <a href="https://medium.com/@samdutton/website-prelaunch-checklist-14d0002b4c7c">Website prelaunch checklist</a><br>— simple techniques to find and fix glitches.</p>
-    </div> -->
+  <h1><a href="../../index.html" title="simpl.info home page">simpl.info</a> mediaDevices.<wbr>enumerateDevices()</h1>
 
-<!--     <div id="highlight">
-      <p>I wrote an app!
-        <br><br>
-        <a href="https://medium.com/@samdutton/website-prelaunch-checklist-14d0002b4c7c">Multihouse</a> gets median scores for multiple URLs for multiple Lighthouse runs.</p>
-    </div>
-
-    <div id="highlight">
-			<p>HTML, CSS and JavaScript feature support across top browsers:
-			  <br><br>
-			  <a href="https://bit.ly/caniuse-stuff">bit.ly/caniuse-stuff</a>
-			</p>
-		</div> -->
-
-<!--      -->
-
-    <h1><a href="../index.html" title="simpl.info home page">simpl.info</a> getUserMedia</h1>
-
-    <video autoplay playsinline></video>
-
-    <p>The <code>MediaStream</code> object <code>stream</code> passed to the <code>getUserMedia()</code> callback in this demo is in global scope, so you can inspect it from the console.</p>
-
-    <p>For more information, see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio &amp; Video in HTML5</a> on HTML5 Rocks.</p>
-
-    <a href="https://github.com/samdutton/simpl/blob/gh-pages/getusermedia" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-
+  <div class="select">
+    <label for="audioSource">Audio source: </label><select id="audioSource"></select>
   </div>
 
-  <script src="js/main.js"></script>
+  <div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+  </div>
 
+  <video autoplay muted playsinline></video>
 
-</body>
+  <script async src="js/main.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
+
+  <p>For more information see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio &amp; Video in HTML5</a> on HTML5 Rocks.</p>
+
+<a href="https://github.com/samdutton/simpl/blob/gh-pages/getusermedia/sources/js/main.js" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+
+</div>
+
+<script src="../../js/lib/ga.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="9861014900b715bb88e4ef9b-|49" defer=""></script></body>
 </html>
