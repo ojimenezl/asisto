@@ -6,7 +6,7 @@ if (isset($_GET['id'])){
 	$id=intval($_GET['id']);
 	$res = $cliente->delete($id);
 	if($res){
-		header('location: index.php');
+		header('location: https://asisto.herokuapp.com/registros.php');
 	}else{
 		echo "Error al eliminar el registro";
 	}
