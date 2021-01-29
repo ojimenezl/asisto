@@ -41,7 +41,7 @@
 			$return = mysqli_fetch_object($res );
 			return $return ;
 		}
-		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora, $id_c){
+		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id_c){
 			$sql = "UPDATE `registro` SET `nombre`='$nombres',`cedula`='$cedula',`departamento`='$departamento',`ipuser`='$ipuser',`latitud`='$latitud',`longitud`='$longitud',`hora`='$hora' WHERE
 			`id`='$id_c'";
 			 
@@ -53,18 +53,7 @@
 			}
 		}
 		
-// 		public function update($nombres,$apellidos,$telefono,$direccion,$correo_electronico, $id_c){
-// 			$sql = "INSERT INTO `clientes` (nombres, apellidos, telefono, direccion, correo_electronico) VALUES ('$nombres', '$apellidos', '$telefono', '$direccion', '$correo_electronico')";
 
-// 			`id`='$id_c'";
-			 
-// 			$res = mysqli_query($this->con, $sql);
-// 			if($res){
-// 				return true;
-// 			}else{
-// 				return false;
-// 			}
-// 		}
           
           public function create($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora){
               
