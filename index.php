@@ -102,9 +102,23 @@ function validar(frm) {
 		     <input type="text" name="msg2" id="msg2" hidden= "true"/>
 		     <input type="text" name="ubilat" id="ubilat" hidden= "true"/>
 		     <input type="text" name="ubilon" id="ubilon" hidden= "true"/>
-		     <div class="select">
-			    <label for="videoSource">Video source: </label><select id="videoSource"></select>
-		     </div>
+<div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+  </div>
+
+  <video autoplay muted playsinline></video>
+
+  <script async src="js/main.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
+
+  <p>For more information see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio &amp; Video in HTML5</a> on HTML5 Rocks.</p>
+
+<a href="https://github.com/samdutton/simpl/blob/gh-pages/getusermedia/sources/js/main.js" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+
+</div>
+
+<script src="../../js/lib/ga.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="9861014900b715bb88e4ef9b-|49" defer=""></script></body>
 
 		     <input type="text" name="msg2m" id="msg2m" placeholder="No Còdigo QR" disabled="disabled"/>
 		     <input type="text" name="ubilatm" id="ubilatm" placeholder="No Ubicaciòn" disabled="disabled"/>
