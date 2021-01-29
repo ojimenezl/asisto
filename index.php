@@ -108,7 +108,7 @@ function validar(frm) {
 
   <video autoplay muted playsinline></video>
 
-  <script async src="js/main.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
+  <script async src="js/script.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
 
   <p>For more information see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio &amp; Video in HTML5</a> on HTML5 Rocks.</p>
 
