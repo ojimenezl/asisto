@@ -1,6 +1,14 @@
 $(document).ready(function() {
     
-
+  var aValue = storage.getItem('passuni');
+  if (aValue){
+	  alert("dato storage guardado");
+ 
+  }else{
+   var p="12345mm"
+   localStorage.setItem('passuni', p); 
+	  alert("dato NO storage guardado");
+  }
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
