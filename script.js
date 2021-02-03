@@ -123,15 +123,7 @@ function showError(error){
 	    inputFm.value = "QR Listo!"
                 //$('#msg2').text(content);
         });
-	      var aValue = storage.getItem('passuni');
-  if (aValue){
-	  alert("dato storage guardado");
- 
-  }else{
-   var p="12345mm"
-   localStorage.setItem('passuni', p); 
-	  alert("dato NO storage guardado");
-  }
+
 	geoloc();
      let constraints;
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
