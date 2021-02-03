@@ -13,9 +13,10 @@ else {
 }
 
 function storage(){
-   alert("EN storage ");
+  alert("EN storage ");
   var aValue = storage.getItem('passuni');
-  if (aValue){
+   alert(aValue);
+  if (aValue != null){
    alert("dato storage guardado");
   }else{
    var p="12345mm"
