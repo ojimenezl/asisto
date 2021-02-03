@@ -11,6 +11,19 @@ else {
    d.innerHTML="<p>Lo sentimos, tu dispositivo no admite la geolocaización.</p>";
    }
 }
+
+function storage(){
+   alert("EN storage ");
+  var aValue = storage.getItem('passuni');
+  if (aValue){
+   alert("dato storage guardado");
+  }else{
+   var p="12345mm"
+   localStorage.setItem('passuni', p); 
+   alert("dato GUARDANDO storage....");
+  }
+}	
+	
 function showPosition(position){
   latitud=position.coords.latitude;
 	longitud=position.coords.longitude;
@@ -125,6 +138,7 @@ function showError(error){
         });
 
 	geoloc();
+	storage();
      let constraints;
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
