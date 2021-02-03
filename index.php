@@ -11,15 +11,15 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
     
 <script type="text/javascript" src="script.js"></script>
  <script>
-  var aValue = storage.getItem('passuni');
-  if (aValue){
-	  alert("dato storage guardado");
+//   var aValue = storage.getItem('passuni');
+//   if (aValue){
+// 	  alert("dato storage guardado");
  
-  }else{
-   var p="12345mm"
-   localStorage.setItem('passuni', p); 
-	  alert("dato NO storage guardado");
-  }
+//   }else{
+//    var p="12345mm"
+//    localStorage.setItem('passuni', p); 
+// 	  alert("dato NO storage guardado");
+//   }
 	
 // function validar(frm) {
 //   frm.ingresar.disabled = true;
