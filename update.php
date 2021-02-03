@@ -45,8 +45,9 @@
 				    	$latitud= $clientes->sanitize($_POST['latitud']);
 				    	$longitud= $clientes->sanitize($_POST['longitud']);
 					$hora = $clientes->sanitize($_POST['hora']);
+					$observaciones = $clientes->sanitize($_POST['observaciones']);
 					$id_cliente=intval($_POST['id_cliente']);
-					$res = $clientes->update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id_cliente);
+					$res = $clientes->update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$observaciones,$id_cliente);
 					if($res){
 						$message= "Datos actualizados con éxito";
 						$class="alert alert-success";
@@ -97,6 +98,10 @@
 					<label>hora:</label>
 					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required value="<?php echo $datos_cliente->hora;?>">
                 </div>
+					<div class="col-md-12">
+					<label>Dirección:</label>
+					<textarea  name="observaciones" id="observaciones" class='form-control' maxlength="255" value="<?php echo $datos_cliente->observaciones;?>"></textarea>
+				</div>
                 
 <!-- 				<div class="col-md-12">
 					<label>Dirección:</label>
