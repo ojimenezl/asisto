@@ -13,8 +13,9 @@ else {
 }
 
 function storage(){
+	var aValue = storage.getItem('passuni');
   alert("EN storage ");
-  var aValue = storage.getItem('passuni');
+  
    alert("algo "+aValue);
   if (aValue != null){
    alert("dato storage guardado");
