@@ -99,7 +99,7 @@
 					<input type="text" name="hora" id="hora" class='form-control' maxlength="100" required value="<?php echo $datos_cliente->hora;?>">
                 </div>
 					<div class="col-md-12">
-					<label>Dirección:</label>
+					<label>Observaciones:</label>
 					<textarea  name="observaciones" id="observaciones" class='form-control' maxlength="255" ><?php echo $datos_cliente->observaciones;?></textarea>
 				</div>
                 
