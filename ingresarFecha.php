@@ -78,10 +78,17 @@ if($connect!=null ){
    
    guardarDatos($codigoqr,$ipuser,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
 
-   $fh = fopen($txt, "w") or die("Error al crear");
+   $fh = fopen('archivo.txt', "w") or die("Error al crear");
    $texto=$NombreDato.$UsuarioDato.$DeparDato.$NaciDato.$CedulaDato;
    fwrite($fh, $texto);
    fclose($fh);
+  // $nombre_fichero = '/path/to/foo.txt';
+
+   if (file_exists($fh)) {
+       echo "El fichero $fh existe";
+   } else {
+       echo "El fichero $fh no existe";
+   }
   }else{
   echo'<script> alert("Faltan datos, no hemos podido registrar tu asistencia. Prueba de nuevo.")</script>';
 }
