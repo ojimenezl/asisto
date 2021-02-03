@@ -134,6 +134,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 					<th>latitud</th>
 					<th>longitud</th>
 					<th>hora</th>
+					<th>Observaciones</th>
 				    </tr>
 				</thead>
 			      <?php
@@ -150,6 +151,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 			      <td><?php echo $mostrar['latitud']?></td>
 			      <td><?php echo $mostrar['longitud']?></td>
 			      <td ><?php echo $mostrar['hora'] ?></td>
+		              <td ><?php echo $mostrar['observaciones'] ?></td>
 
 			      <td>
 				<a href="update.php?id=<?php echo $mostrar['id'];?>" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
