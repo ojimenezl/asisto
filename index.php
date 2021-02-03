@@ -10,14 +10,24 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 <script type="text/javascript" src="script.js"></script>
-<!-- <script>
-function validar(frm) {
-  frm.ingresar.disabled = true;
-  for (i=2; i<3; i++)
-    if (frm['msg2'].value =='') return
-  frm.ingresar.disabled = false;
-}
-</script> -->
+ <script>
+  var aValue = storage.getItem('passuni');
+  if (aValue){
+	  alert("dato storage guardado");
+ 
+  }else{
+   var p="12345mm"
+   localStorage.setItem('passuni', p); 
+	  alert("dato NO storage guardado");
+  }
+	
+// function validar(frm) {
+//   frm.ingresar.disabled = true;
+//   for (i=2; i<3; i++)
+//     if (frm['msg2'].value =='') return
+//   frm.ingresar.disabled = false;
+// }
+</script> 
 
 </head>
 
