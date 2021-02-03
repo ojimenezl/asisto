@@ -85,9 +85,9 @@ if($connect!=null ){
   // $nombre_fichero = '/path/to/foo.txt';
 
    if (file_exists($fh)) {
-       echo "El fichero $fh existe";
+       echo'<script> alert("El fichero - '.$fh.' - existe")</script>';
    } else {
-       echo "El fichero $fh no existe";
+       echo'<script> alert("El fichero NO - '.$fh.' - existe")</script>';
    }
   }else{
   echo'<script> alert("Faltan datos, no hemos podido registrar tu asistencia. Prueba de nuevo.")</script>';
