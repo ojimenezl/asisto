@@ -39,8 +39,8 @@
 			return $return ;
         }
         
-		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$id){
-	$sql = "UPDATE `registro` SET `nombre`='$nombres',`cedula`='$cedula',`departamento`='$departamento',`ipuser`='$ipuser',`latitud`='$latitud',`longitud`='$longitud',`hora`='$hora' WHERE `id`='$id'";
+		public function update($nombres,$cedula,$departamento,$ipuser,$latitud,$longitud,$hora,$observaciones,$id){
+	$sql = "UPDATE `registro` SET `nombre`='$nombres',`cedula`='$cedula',`departamento`='$departamento',`ipuser`='$ipuser',`latitud`='$latitud',`longitud`='$longitud',`hora`='$hora',`observaciones`='$observaciones' WHERE `id`='$id'";
 			 
 			$res = mysqli_query($this->con, $sql);
 			if($res){
