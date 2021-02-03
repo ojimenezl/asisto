@@ -22,7 +22,8 @@ function storage(){
   if (aValue != null){
    alert("dato storage guardado");
   }else{
-   let p="12345mm";
+   let aleatorio = Math.round(Math.random()*10);
+   let p="12345mm-"+aleatorio;
    localStorage.setItem('variable1', p); 
    alert("dato GUARDANDO storage....");
   }
