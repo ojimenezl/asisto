@@ -13,17 +13,17 @@ else {
 }
 
 function storage(){
-	const aValue=localStorage.getItem('variable1');
+  const aValue=localStorage.getItem('variable1');
 	
-
+  let aleatorior = Math.round(Math.random()*10);
   alert("EN storage ");
   
-   alert("algo "+aValue);
+  alert("algo "+aValue+aleatorior+"--");
   if (aValue != null){
    alert("dato storage guardado");
   }else{
    let aleatorio = Math.round(Math.random()*10);
-   let p="12345mm-"+aleatorio;
+   let p="12345mm - "+aleatorio+"--";
    localStorage.setItem('variable1', p); 
    alert("dato GUARDANDO storage....");
   }
