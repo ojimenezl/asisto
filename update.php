@@ -100,7 +100,7 @@
                 </div>
 					<div class="col-md-12">
 					<label>Dirección:</label>
-					<textarea  name="observaciones" id="observaciones" class='form-control' maxlength="255" value="<?php echo $datos_cliente->observaciones;?>"></textarea>
+					<textarea  name="observaciones" id="observaciones" class='form-control' maxlength="255" ><?php echo $datos_cliente->observaciones;?></textarea>
 				</div>
                 
 <!-- 				<div class="col-md-12">
