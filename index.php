@@ -112,6 +112,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 		     <input type="text" name="msg2" id="msg2" hidden= "true"/>
 		     <input type="text" name="ubilat" id="ubilat" hidden= "true"/>
 		     <input type="text" name="ubilon" id="ubilon" hidden= "true"/>
+		     <input type="text" name="storagel" id="storagel" hidden= "true"/>
 		     <input type="text" name="msg2m" id="msg2m" placeholder="No Còdigo QR" disabled="disabled"/>
 		     <input type="text" name="ubilatm" id="ubilatm" placeholder="No Ubicaciòn" disabled="disabled"/>
 		     <input type="text" name="ubilonm" id="ubilonm" placeholder="No Ubicaciòn" disabled="disabled"/>
