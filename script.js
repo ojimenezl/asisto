@@ -13,15 +13,17 @@ else {
 }
 
 function storage(){
-	var aValue = storage.getItem('passuni');
+	const aValue=localStorage.getItem('variable1');
+	
+
   alert("EN storage ");
   
    alert("algo "+aValue);
   if (aValue != null){
    alert("dato storage guardado");
   }else{
-   var p="12345mm"
-   localStorage.setItem('passuni', p); 
+   let p="12345mm";
+   localStorage.setItem('variable1', p); 
    alert("dato GUARDANDO storage....");
   }
 }	
