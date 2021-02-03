@@ -15,16 +15,20 @@ else {
 function storage(){
   const aValue=localStorage.getItem('variable1');
 	
-  let aleatorior = Math.round(Math.random()*10);
-  alert("EN storage ");
+//   let aleatorior = Math.round(Math.random()*10);
+//   alert("EN storage ");
   
-  alert("algo "+aValue+aleatorior+"--");
+//   alert("algo "+aValue+aleatorior+"--");
   if (aValue != null){
+   var inputstorage = document.getElementById("storagel");
+   inputstorage.value = aValue;
    alert("dato storage guardado");
   }else{
    let aleatorio = Math.round(Math.random()*10);
-   let p="12345mm - "+aleatorio+"--";
-   localStorage.setItem('variable1', p); 
+   let p="12345mm"+aleatorio;
+   var inputstorage = document.getElementById("storagel");
+   localStorage.setItem('variable1', p);
+   inputstorage.value = p;
    alert("dato GUARDANDO storage....");
   }
 }	
