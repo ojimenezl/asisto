@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>Editar <b>Cliente</b></h2></div>
                     <div class="col-sm-4">
-                        <a href="index.php" class="btn btn-info add-new"><i class="fa fa-arrow-left"></i> Regresar</a>
+                        <a href="https://asisto.herokuapp.com/registros.php" class="btn btn-info add-new"><i class="fa fa-arrow-left"></i> Regresar</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
 				<div class="col-md-6">
 					<label>Nombres:</label>
 					<input type="text" name="nombres" id="nombres" class='form-control' maxlength="100" required value="<?php echo $datos_cliente->nombre;?>" >
-				        <input type="hidden" name="id" id="id" class='form-control' maxlength="100"   value="<?php $datos_cliente->ipuser;?>">
+				        <input type="text" name="id" id="id" class='form-control' maxlength="100"   value="<?php $datos_cliente->id;?>">
 					</div>
 				<div class="col-md-6">
 					<label>Cédula:</label>
