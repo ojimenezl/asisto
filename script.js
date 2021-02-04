@@ -7,6 +7,14 @@ function geoloc() {
   if (navigator.geolocation){
 //     d.innerHTML="<p>Tu dispositivo soporta la geolocalización.</p>";
     navigator.geolocation.getCurrentPosition(showPosition,showError)
+	  if(latitud != ""){
+		    $('#img2').show();
+		    alert("UBICACIÓN LISTO!!");
+	    }else{
+		    $('#startbtn img').show();
+		    $('#img2').hide()
+		    alert("Recuerde ACTIVAR su UBICACIÓN!");
+	    }
 	  return true;
 
   }
@@ -157,14 +165,7 @@ function showError(error){
 
  	geoloc();
 	storage();
-	    if(latitud != ""){
-		    $('#img2').show();
-		    alert("UBICACIÓN LISTO!!");
-	    }else{
-		    $('#startbtn img').show();
-		    $('#img2').hide()
-		    alert("Recuerde ACTIVAR su UBICACIÓN!");
-	    }
+	    
 //      let constraints;
 //     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
