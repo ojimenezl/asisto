@@ -1,5 +1,6 @@
 $(document).ready(function() {
 var latd="";
+var latitud="";
 $('#img2').hide();
 function geoloc() {
   d=document.getElementById("demo");
@@ -156,7 +157,7 @@ function showError(error){
 
  	geoloc();
 	storage();
-	    if(latd != ""){
+	    if(latitud != ""){
 		    $('#img2').show();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
