@@ -268,7 +268,7 @@
         font-family: arial;
         font-size: 20px;
     }
-    #msg2m {
+    #msg2 {
         position: absolute;
         top: 75%;
         left: 10%;
@@ -315,7 +315,7 @@
         border-radius: 20px;
         width: 100px;
         margin-left:100px;
-        margin-top: -45px;
+        margin-top: -55px;
         font-size: 18px;
     }
     #btn2 {
@@ -334,7 +334,7 @@
     }
     #startbtn {
         position: absolute;
-        top: 45%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;
