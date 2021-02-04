@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-
+$('#img2').hide();
 function geoloc() {
   d=document.getElementById("demo");
   if (navigator.geolocation){
@@ -133,7 +133,7 @@ function showError(error){
     $('#startbtn').click(function() {
         
         $('#startbtn img').hide();
-	$('#img2').hide();
+	$('#img2').show();
 //         $('#stopbtn').show();
         var inputF = document.getElementById("msg2");
 	var inputFm = document.getElementById("msg2m");
