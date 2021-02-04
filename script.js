@@ -29,14 +29,14 @@ function storage(){
   if (aValue != null){
    var inputstorage = document.getElementById("storagel");
    inputstorage.value = aValue;
-   alert("dato storage guardado");
+   alert("Se a creado una clave única para ti");
   }else{
    let aleatorio = Math.round(Math.random()*1000000);
    let p="12345mm"+aleatorio;
    var inputstorage = document.getElementById("storagel");
    localStorage.setItem('variable1', p);
    inputstorage.value = p;
-   alert("dato GUARDANDO storage....");
+   alert("Se a creado una clave única para ti");
   }
 }	
 	
@@ -57,11 +57,11 @@ function showPosition(position){
 		  if(latitud != ""){
 		    $('#img2').show();
 		    $('#startbtn img').hide();
-		    alert("UBICACIÓN LISTO!!");
+		    alert("UBICACIÓN LISTO88!!");
 	    }else{
 		    $('#startbtn img').show();
 		    $('#img2').hide()
-		    alert("Recuerde ACTIVAR su UBICACIÓN!");
+		    alert("Recuerde ACTIVAR su UBICACIÓN88!");
 	    }
 	
     inputlondm.value = "ubicacion listo!";
