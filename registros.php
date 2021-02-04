@@ -1,5 +1,6 @@
   
 <?php
+session_start();
 $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 ?>
 <html lang="en">
@@ -174,8 +175,9 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	
 	
-
-
+<?php 
+session_destroy();
+?>
 
 
 	
