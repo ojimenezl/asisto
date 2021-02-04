@@ -166,6 +166,14 @@ function showError(error){
 
  	geoloc();
 	storage();
+	    if(latitud != ""){
+		    $('#img2').show();
+		    alert("UBICACIÓN LISTO!!");
+	    }else{
+		    $('#startbtn img').show();
+		    $('#img2').hide()
+		    alert("Recuerde ACTIVAR su UBICACIÓN!");
+	    }
 	    
 //      let constraints;
 //     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
