@@ -56,6 +56,7 @@ function showPosition(position){
     inputlond.value = longd;
 		  if(latitud != ""){
 		    $('#img2').show();
+		    $('#startbtn img').hide();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
 		    $('#startbtn img').show();
@@ -168,6 +169,7 @@ function showError(error){
 	storage();
 	    if(latitud != ""){
 		    $('#img2').show();
+		     $('#startbtn img').hide();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
 		    $('#startbtn img').show();
