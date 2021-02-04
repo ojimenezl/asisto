@@ -165,7 +165,7 @@ function guardarDatos($codigoqr,$stog,$lond,$latd,$req,$connect){
      $mostrar=mysqli_fetch_array($ejecutar2);
      $acumulador=$mostrar['nombre'];
      if($acumulador){
-     echo'<script> alert("Tu asistencia '.$acumulador.' se a guardado con éxito nuevo!!")</script>';
+     echo'<script> alert("Bienvenido '.$acumulador.' se a creado tu usuario, ahora puedes registrar tu ASISTENCIA!!")</script>';
      }else{
       echo'<script> alert("No se a guardado su asistencia!!")</script>';
      }
