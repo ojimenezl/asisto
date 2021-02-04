@@ -6,8 +6,10 @@ function geoloc() {
   if (navigator.geolocation){
 //     d.innerHTML="<p>Tu dispositivo soporta la geolocalización.</p>";
     navigator.geolocation.getCurrentPosition(showPosition,showError)
+
   }
 else {
+   
    d.innerHTML="<p>Lo sentimos, tu dispositivo no admite la geolocaización.</p>";
    }
 }
@@ -47,6 +49,7 @@ function showPosition(position){
  var inputlond = document.getElementById("ubilon");
  var inputlondm = document.getElementById("ubilonm");
     inputlond.value = longd;
+	$('#img2').show();
     inputlondm.value = "ubicacion listo!";
 	
 	
@@ -133,7 +136,7 @@ function showError(error){
     $('#startbtn').click(function() {
         
         $('#startbtn img').hide();
-	$('#img2').show();
+	
 //         $('#stopbtn').show();
         var inputF = document.getElementById("msg2");
 	var inputFm = document.getElementById("msg2m");
