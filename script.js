@@ -165,7 +165,7 @@ function showError(error){
 	storage();
 	    if(latitud == ""){
 		    $('#startbtn img').show();
-// 		    $('#img2').hide()
+		    $('#img2').hide()
 		    alert("Recuerde ACTIVAR su UBICACIÓN!");
 	    }
 	    
