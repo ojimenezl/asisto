@@ -344,6 +344,9 @@
     #startbtn img {
         width: 100px;
     }
+    #img2 {
+        width: 100px;
+    }
     #stopbtn {
         position: absolute;
         top: 90%;
