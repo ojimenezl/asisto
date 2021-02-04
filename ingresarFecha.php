@@ -92,7 +92,7 @@ if($connect!=null ){
 //    }
   }else{
   echo'<script> alert("Faltan datos, no hemos podido registrar tu asistencia. Prueba de nuevo.")</script>';
-   header('Location: [https://asisto.herokuapp.com/')];
+//    header('Location: [https://asisto.herokuapp.com/')];
 }
 
 }else{
