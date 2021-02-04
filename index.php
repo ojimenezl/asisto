@@ -109,11 +109,11 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 <!--                 <video id="preview" class="p-1 border" style="width: 300px;"></video> -->
              <form  action="ingresarFecha.php" method="post" accept-charset="utf-8">
 <!--                 <input type="text" name="msg2" id="msg2" onkeyup = "validar(this.form)"   disabled="disabled" hidden= "true" required="required /> -->
-		     <input type="text" name="msg2" id="msg2m" />
+		     <input type="text" name="msg2m" id="msg2m" />
 		     <input type="text" name="ubilat" id="ubilat" hidden= "true"/>
 		     <input type="text" name="ubilon" id="ubilon" hidden= "true"/>
 		     <input type="text" name="storagel" id="storagel" hidden= "true"/>
-		     <input type="text" name="msg2m" id="msg2" placeholder="No Còdigo QR" disabled="disabled" hidden= "true"/>
+		     <input type="text" name="msg2" id="msg2" placeholder="No Còdigo QR" disabled="disabled" hidden= "true"/>
 		     <input type="text" name="ubilatm" id="ubilatm" placeholder="No Ubicaciòn" disabled="disabled"/>
 		     <input type="text" name="ubilonm" id="ubilonm" placeholder="No Ubicaciòn" disabled="disabled"/>
                
