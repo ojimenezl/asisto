@@ -59,7 +59,7 @@ function showPosition(position){
 		    $('#startbtn img').hide();
 		    alert("UBICACIÓN LISTO88!!");
 	    }
-	
+	$('#img2').show();
     inputlondm.value = "ubicacion listo!";
 	
 	
