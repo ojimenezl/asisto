@@ -7,14 +7,7 @@ function geoloc() {
   if (navigator.geolocation){
 //     d.innerHTML="<p>Tu dispositivo soporta la geolocalización.</p>";
     navigator.geolocation.getCurrentPosition(showPosition,showError)
-	  if(latitud != ""){
-		    $('#img2').show();
-		    alert("UBICACIÓN LISTO!!");
-	    }else{
-		    $('#startbtn img').show();
-		    $('#img2').hide()
-		    alert("Recuerde ACTIVAR su UBICACIÓN!");
-	    }
+
 	  return true;
 
   }
@@ -61,6 +54,14 @@ function showPosition(position){
  var inputlond = document.getElementById("ubilon");
  var inputlondm = document.getElementById("ubilonm");
     inputlond.value = longd;
+		  if(latitud != ""){
+		    $('#img2').show();
+		    alert("UBICACIÓN LISTO!!");
+	    }else{
+		    $('#startbtn img').show();
+		    $('#img2').hide()
+		    alert("Recuerde ACTIVAR su UBICACIÓN!");
+	    }
 	
     inputlondm.value = "ubicacion listo!";
 	
