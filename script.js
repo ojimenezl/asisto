@@ -1,6 +1,7 @@
+var latitud="";
 $(document).ready(function() {
 var latd="";
-var latitud="";
+
 $('#img2').hide();
 function geoloc() {
   d=document.getElementById("demo");
@@ -57,7 +58,7 @@ function showPosition(position){
 		  if(latitud != ""){
 		    $('#img2').show();
 		    $('#startbtn img').hide();
-		    alert("UBICACIÓN LISTO88!!");
+		    alert("UBICACIÓN LISTO!!");
 	    }
 	$('#img2').show();
     inputlondm.value = "ubicacion listo!";
