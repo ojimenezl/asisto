@@ -6,11 +6,14 @@ function geoloc() {
   if (navigator.geolocation){
 //     d.innerHTML="<p>Tu dispositivo soporta la geolocalización.</p>";
     navigator.geolocation.getCurrentPosition(showPosition,showError)
+	  return true;
 
   }
 else {
    
    d.innerHTML="<p>Lo sentimos, tu dispositivo no admite la geolocaización.</p>";
+	return false;
+	
    }
 }
 
