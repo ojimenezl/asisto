@@ -91,7 +91,7 @@ if($connect!=null ){
 //        echo'<script> alert("El fichero NO - '.$fh.' - existe")</script>';
 //    }
   }else{
-   header('Location: https://asisto.herokuapp.com/');
+   header('Location: https://asisto.herokuapp.com/iniciosesion.php');
   echo'<script> alert("Faltan datos, no hemos podido registrar tu asistencia. Prueba de nuevo.")</script>';
   
    
