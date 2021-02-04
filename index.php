@@ -99,7 +99,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
                     <!--input type="text" name="msg2" id="msg2" size="40" onkeyup="return validar(this.value,'bt1')"-->
        
                     <img src="ubi.png" />
-		    <img id="img2" src="listo.png" />
+		    <img id="img2" src="listo2.png" />
                 </div>
 		    
 
