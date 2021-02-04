@@ -153,6 +153,11 @@ function showError(error){
 
 	geoloc();
 	storage();
+	    if(geoloc()){
+		    alert("UBICACIÓN LISTO!!");
+	    }else{
+		    alert("Recuerde ACTIVAR su UBICACIÓN!");
+	    }
 //      let constraints;
 //     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
