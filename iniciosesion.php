@@ -10,7 +10,9 @@
     <script type="text/javascript" src="iniciosesion.js"></script>
     </head>
 
-
+<?php 
+session_destroy();
+?>
 <hgroup>
     <h1>Administración Login</h1>
     <h3>By ASISTO</h3>
