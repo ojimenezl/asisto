@@ -120,6 +120,7 @@ function showError(error){
     $('#stopbtn').click(function() {
         $('#startbtn img').show();
         $('#stopbtn').hide();
+	$('#img2').hide();
         var videoEl = document.getElementById('preview');
 //         stream = videoEl.srcObject;
 //         tracks = stream.getTracks();
