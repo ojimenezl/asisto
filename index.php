@@ -94,11 +94,11 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 		
 		  </div>
             <div id="scanner">
-                <button id="stopbtn">Stop</button>
+<!--                 <button id="stopbtn">Stop</button> -->
                 <div id="startbtn">
                     <!--input type="text" name="msg2" id="msg2" size="40" onkeyup="return validar(this.value,'bt1')"-->
        
-                    <img src="dep2.png" />
+                    <img src="ubi.png" />
                 </div>
 		    
 
