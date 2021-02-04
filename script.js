@@ -133,85 +133,85 @@ function showError(error){
         
         $('#startbtn img').hide();
         $('#stopbtn').show();
-        var inputF = document.getElementById("msg2");
-	var inputFm = document.getElementById("msg2m");
-        var scanner = new Instascan.Scanner({
-            video: document.getElementById('preview'),
-            scanPeriod: 5,
-            mirror: false
-        });
-        scanner.addListener('scan', function(content) {
-            inputF.value = content
-	    inputFm.value = "QR Listo!"
-                //$('#msg2').text(content);
-        });
+//         var inputF = document.getElementById("msg2");
+// 	var inputFm = document.getElementById("msg2m");
+//         var scanner = new Instascan.Scanner({
+//             video: document.getElementById('preview'),
+//             scanPeriod: 5,
+//             mirror: false
+//         });
+//         scanner.addListener('scan', function(content) {
+//             inputF.value = content
+// 	    inputFm.value = "QR Listo!"
+//                 //$('#msg2').text(content);
+//         });
 
 	geoloc();
 	storage();
-     let constraints;
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+//      let constraints;
+//     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 
 
-        Instascan.Camera.getCameras().then(function(cameras) {
-            if (cameras.length > 0) {
-                scanner.start(cameras[1]);
-                $('[name="options"]').on('change', function() {
-                    if ($(this).val() == 1) {
-                        if (cameras[0] != "") {
-				    if (iOS) {
-				      constraints = {
-					audio: false,
-					video: {
-					  facingMode: { exact: "environment" },
-					  mandatory: {
-					    sourceId: this.id,
-					    minWidth: 600,
-					    maxWidth: 800,
-					    minAspectRatio: 1.6
-					  },
-					  optional: []
-					}
-				      };
-				    } else {
-					scanner.start(cameras[1]);
-				    }
-                            scanner.start(cameras[1]);
-                        } else {
-                            alert("Su cámara delantera no funciona");
-                        }
-                    } else if ($(this).val() == 2) {
-                        if (cameras[1] != "") {
+//         Instascan.Camera.getCameras().then(function(cameras) {
+//             if (cameras.length > 0) {
+//                 scanner.start(cameras[1]);
+//                 $('[name="options"]').on('change', function() {
+//                     if ($(this).val() == 1) {
+//                         if (cameras[0] != "") {
+// 				    if (iOS) {
+// 				      constraints = {
+// 					audio: false,
+// 					video: {
+// 					  facingMode: { exact: "environment" },
+// 					  mandatory: {
+// 					    sourceId: this.id,
+// 					    minWidth: 600,
+// 					    maxWidth: 800,
+// 					    minAspectRatio: 1.6
+// 					  },
+// 					  optional: []
+// 					}
+// 				      };
+// 				    } else {
+// 					scanner.start(cameras[1]);
+// 				    }
+//                             scanner.start(cameras[1]);
+//                         } else {
+//                             alert("Su cámara delantera no funciona");
+//                         }
+//                     } else if ($(this).val() == 2) {
+//                         if (cameras[1] != "") {
                             
-				    if (iOS) {
-				      constraints = {
-					audio: false,
-					video: {
-					  facingMode: { exact: "environment" },
-					  mandatory: {
-					    sourceId: this.id,
-					    minWidth: 600,
-					    maxWidth: 800,
-					    minAspectRatio: 1.6
-					  },
-					  optional: []
-					}
-				      };
-				    } else {
-					scanner.start(cameras[1]);
-				    }
-                        } else {
-                            alert("Su cámara trasera no funciona");
-                        }
-                    }
-                });
-            } else {
-                alert("Su cámara no funciona");
-            }
-        }).catch(function(e) {
-            alert(e);
-        });
-    });
+// 				    if (iOS) {
+// 				      constraints = {
+// 					audio: false,
+// 					video: {
+// 					  facingMode: { exact: "environment" },
+// 					  mandatory: {
+// 					    sourceId: this.id,
+// 					    minWidth: 600,
+// 					    maxWidth: 800,
+// 					    minAspectRatio: 1.6
+// 					  },
+// 					  optional: []
+// 					}
+// 				      };
+// 				    } else {
+// 					scanner.start(cameras[1]);
+// 				    }
+//                         } else {
+//                             alert("Su cámara trasera no funciona");
+//                         }
+//                     }
+//                 });
+//             } else {
+//                 alert("Su cámara no funciona");
+//             }
+//         }).catch(function(e) {
+//             alert(e);
+//         });
+//     });
 
 
     $("#save").click(function(e) {
@@ -225,6 +225,7 @@ function showError(error){
         caja.append("<p>" + valores + "</p>");
 
     });
+	    
     // function writeToFile(d1, d2){
     //     var fso = new ActiveXObject("Scripting.FileSystemObject");
     //     var fh = fso.OpenTextFile("data.txt", 8, false, 0);
