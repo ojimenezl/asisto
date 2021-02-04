@@ -237,10 +237,13 @@ body {
 }
 }
 
+
+
 @media screen and (min-width:300px) and (max-width:800px){
 	body {
 		font-size:80%; 
 		position: static;
+		overflow: hidden;
 	} 
 #box1 {
     width: 50%;
@@ -287,6 +290,8 @@ body {
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center;
+    margin-top: -63px;
+
    
 
 }
