@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+ var latd="";
 $('#img2').hide();
 function geoloc() {
   d=document.getElementById("demo");
@@ -42,7 +42,7 @@ function showPosition(position){
   latitud=position.coords.latitude;
 	longitud=position.coords.longitude;
   radio=Math.sqrt(15000) * 10;
-	var latd=latitud;
+	latd=latitud;
 	var longd=longitud;
 	
  var inputlatd = document.getElementById("ubilat");
@@ -154,9 +154,9 @@ function showError(error){
 //                 //$('#msg2').text(content);
 //         });
 
-	geoloc();
+// 	geoloc();
 	storage();
-	    if(geoloc()){
+	    if(latd != ""){
 		    $('#img2').show();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
