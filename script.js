@@ -132,7 +132,8 @@ function showError(error){
     $('#startbtn').click(function() {
         
         $('#startbtn img').hide();
-        $('#stopbtn').show();
+	$('#img2').show();
+//         $('#stopbtn').show();
         var inputF = document.getElementById("msg2");
 	var inputFm = document.getElementById("msg2m");
 //         var scanner = new Instascan.Scanner({
