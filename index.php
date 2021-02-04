@@ -98,7 +98,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
                 <div id="startbtn">
                     <!--input type="text" name="msg2" id="msg2" size="40" onkeyup="return validar(this.value,'bt1')"-->
        
-                    <img src="img.jpg" />
+                    <img src="dep2.png" />
                 </div>
 		    
 
@@ -106,14 +106,14 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 		    
 		    
 <!--                 <input type="file" accept="image/*" capture="camera"> -->
-                <video id="preview" class="p-1 border" style="width: 300px;"></video>
+<!--                 <video id="preview" class="p-1 border" style="width: 300px;"></video> -->
              <form  action="ingresarFecha.php" method="post" accept-charset="utf-8">
 <!--                 <input type="text" name="msg2" id="msg2" onkeyup = "validar(this.form)"   disabled="disabled" hidden= "true" required="required /> -->
-		     <input type="text" name="msg2" id="msg2" hidden= "true"/>
+		     <input type="text" name="msg2" id="msg2m" />
 		     <input type="text" name="ubilat" id="ubilat" hidden= "true"/>
 		     <input type="text" name="ubilon" id="ubilon" hidden= "true"/>
 		     <input type="text" name="storagel" id="storagel" hidden= "true"/>
-		     <input type="text" name="msg2m" id="msg2m" placeholder="No Còdigo QR" disabled="disabled"/>
+		     <input type="text" name="msg2m" id="msg2" placeholder="No Còdigo QR" disabled="disabled" hidden= "true"/>
 		     <input type="text" name="ubilatm" id="ubilatm" placeholder="No Ubicaciòn" disabled="disabled"/>
 		     <input type="text" name="ubilonm" id="ubilonm" placeholder="No Ubicaciòn" disabled="disabled"/>
                
@@ -142,7 +142,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 </html>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 
 <!--
 Copyright 2017 Google Inc.
@@ -156,7 +156,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-
+<!-- 
 <html lang="en">
 <head>
 
@@ -188,7 +188,7 @@ ga('send', 'pageview');
 
 <link rel="stylesheet" href="../../css/main.css">
 
-<style>
+<style> 
 h1 {
   margin: 0 0 24px 0;
 }
@@ -237,4 +237,4 @@ video {
 <script src="../../js/lib/ga.js" type="9861014900b715bb88e4ef9b-text/javascript"></script>
 
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="9861014900b715bb88e4ef9b-|49" defer=""></script></body>
-</html>
+</html>-->
