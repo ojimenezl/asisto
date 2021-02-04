@@ -24,7 +24,7 @@ function storage(){
    inputstorage.value = aValue;
    alert("dato storage guardado");
   }else{
-   let aleatorio = Math.round(Math.random()*10);
+   let aleatorio = Math.round(Math.random()*1000000);
    let p="12345mm"+aleatorio;
    var inputstorage = document.getElementById("storagel");
    localStorage.setItem('variable1', p);
@@ -36,7 +36,7 @@ function storage(){
 function showPosition(position){
   latitud=position.coords.latitude;
 	longitud=position.coords.longitude;
-  radio=Math.sqrt(15000) * 100000;
+  radio=Math.sqrt(15000) * 10;
 	var latd=latitud;
 	var longd=longitud;
 	
