@@ -49,7 +49,7 @@ function showPosition(position){
  var inputlond = document.getElementById("ubilon");
  var inputlondm = document.getElementById("ubilonm");
     inputlond.value = longd;
-	$('#img2').show();
+	
     inputlondm.value = "ubicacion listo!";
 	
 	
@@ -154,8 +154,10 @@ function showError(error){
 	geoloc();
 	storage();
 	    if(geoloc()){
+		    $('#img2').show();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
+		    $('#startbtn img').show();
 		    alert("Recuerde ACTIVAR su UBICACIÓN!");
 	    }
 //      let constraints;
