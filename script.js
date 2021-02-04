@@ -58,10 +58,6 @@ function showPosition(position){
 		    $('#img2').show();
 		    $('#startbtn img').hide();
 		    alert("UBICACIÓN LISTO88!!");
-	    }else{
-		    $('#startbtn img').show();
-		    $('#img2').hide()
-		    alert("Recuerde ACTIVAR su UBICACIÓN88!");
 	    }
 	
     inputlondm.value = "ubicacion listo!";
@@ -167,11 +163,7 @@ function showError(error){
 
  	geoloc();
 	storage();
-	    if(latitud != ""){
-		    $('#img2').show();
-		     $('#startbtn img').hide();
-		    alert("UBICACIÓN LISTO!!");
-	    }else{
+	    if(latitud == ""){
 		    $('#startbtn img').show();
 // 		    $('#img2').hide()
 		    alert("Recuerde ACTIVAR su UBICACIÓN!");
