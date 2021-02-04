@@ -1,5 +1,5 @@
 $(document).ready(function() {
- var latd="";
+var latd="";
 $('#img2').hide();
 function geoloc() {
   d=document.getElementById("demo");
@@ -154,13 +154,14 @@ function showError(error){
 //                 //$('#msg2').text(content);
 //         });
 
-// 	geoloc();
+ 	geoloc();
 	storage();
 	    if(latd != ""){
 		    $('#img2').show();
 		    alert("UBICACIÓN LISTO!!");
 	    }else{
 		    $('#startbtn img').show();
+		    $('#img2').hide()
 		    alert("Recuerde ACTIVAR su UBICACIÓN!");
 	    }
 //      let constraints;
