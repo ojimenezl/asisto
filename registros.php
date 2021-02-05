@@ -35,16 +35,16 @@
 		if($acumulador){
 		 echo'<script> alert("Bienvenido!!")</script>';
 		 $_SESSION['email'] = $BBDEmail;
-		 header('Location: https://asisto.herokuapp.com/registros.php');
+		 //header('Location: https://asisto.herokuapp.com/registros.php');
 
 		}else{
 		  echo'<script> alert("NO Ingresada")</script>';
-		  echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
+		  //echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 		}
 
 	  }else{
 	    echo'<script> alert("NO Conectado")</script>';
-           echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
+           //echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 
 
 
