@@ -3,10 +3,15 @@ $(window, document, undefined).ready(function() {
    
 
     $('input').blur(function() {
+       
        var userid=document.getElementById("email").value;
+       var passid=document.getElementById("password").value;
       console.log(document.getElementById("email").value);
+       console.log(document.getElementById("password").value);
         localStorage.removeItem('user');
         localStorage.setItem('user',userid);
+       localStorage.removeItem('pass');
+        localStorage.setItem('pass',passid);
       var $this = $(this);
       if ($this.val())
         $this.addClass('used');
