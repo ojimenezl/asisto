@@ -1,11 +1,13 @@
-<script> var aValue=localStorage.getItem('user');    // declaración de la variable </script>    	
+<script> var aValue=localStorage.getItem('user');  
+	var aValuepass=localStorage.getItem('pass'); </script>    	
 <?php
-            $var_PHP = "<script> document.writeln(aValue) </script>"; // igualar el valor de la variable JavaScript a PHP 
+            $var_PHP = "<script> document.writeln(aValue) </script>"; 
+            $var_PHPass = "<script> document.writeln(aValuepass) </script>";
 
-                // muestra el resultado 
+        
 
 	   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-	   if($var_PHP!=null && $password!=null){
+	   if($var_PHP!=null && $var_PHPass!=null){
 	  // Validar la conexión de base de datos.
 	  if ($conn!=null) {
 	    echo'<script> alert("Conectado1234")</script>';
