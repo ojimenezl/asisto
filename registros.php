@@ -173,7 +173,10 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	
 	
-	
+	 <script type="text/javascript">
+        const aValue=localStorage.getItem('user')
+        console.log("holaaaaaa88",aValue)
+    </script>
 	
 
 
