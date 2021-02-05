@@ -174,6 +174,10 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	
 	 <script type="text/javascript">
+       var userid = document.getElementById("email").value;
+        localStorage.removeItem('user');
+        localStorage.setItem('user',userid);
+        console.log("holaaaaaa8899"+userid)
         const aValue=localStorage.getItem('user')
         console.log("holaaaaaa88",aValue)
     </script>
