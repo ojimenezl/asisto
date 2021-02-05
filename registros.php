@@ -2,7 +2,7 @@
 <?php
             $var_PHP = "<script> document.writeln(Var_JavaScript); </script>"; // igualar el valor de la variable JavaScript a PHP 
 
-             echo $var_PHP   // muestra el resultado 
+             echo $var_PHP;   // muestra el resultado 
 
 	   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 	   if($email!=null && $password!=null){
