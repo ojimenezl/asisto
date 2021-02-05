@@ -44,13 +44,5 @@ session_destroy();
    </a>
     <p>You Gotta Love <a href="http://www.polymer-project.org/" target="_blank">Google</a></p>
   </footer>
-     <script type="text/javascript">
-  var userid = document.getElementById("email");
-//          userid.value = "oscarj-456@hotmail.";
-        localStorage.removeItem('user');
-        localStorage.setItem('user',userid);
-        console.log("holaaaaaa88"+userid);
-         console.log("holaappp"+document.getElementById("email"));
-         console.log("holaajjjj"+document.getElementById("email").value);
-         </script>
+
   </html>
