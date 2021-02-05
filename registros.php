@@ -174,9 +174,14 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	
 	 <script type="text/javascript">
-
-        const aValue=localStorage.getItem('user')
+        let aValue=localStorage.getItem('user')
+	if (aValue != ""){
         console.log("holaaaaaa88",aValue)
+	}else{
+		let aValue="";
+		localStorage.removeItem('user');
+		window.location.href="https://asisto.herokuapp.com/iniciosesion.php";
+	}
     </script>
 	
 
