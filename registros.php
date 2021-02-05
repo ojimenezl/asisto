@@ -37,10 +37,12 @@
 
 		}else{
 		  echo'<script> alert("NO Ingresada")</script>';
+		  echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 		}
 
 	  }else{
 	    echo'<script> alert("NO Conectado")</script>';
+           echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 
 
 
