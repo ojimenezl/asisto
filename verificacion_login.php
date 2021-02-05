@@ -10,7 +10,7 @@ include "iniciosesion.php";
   // Crear conexión con la base de datos.
 
   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-   
+   if($email || $password){
   // Validar la conexión de base de datos.
   if ($conn!=null) {
     echo'<script> alert("Conectado1234")</script>';
@@ -55,6 +55,9 @@ include "iniciosesion.php";
     
 
 }
+   }else{
+      echo'<script> alert("Acceso no permitido")</script>';
+   }
 ?>
 
 
