@@ -79,12 +79,14 @@ if($connect!=null ){
    settype($latd, 'float'); 
    settype($lond, 'float'); 
    
-   $variable = "-23.09877";
-   $variable = (double) $variable;
-   if((var_dump($latd)<=-0.17062 && var_dump($latd)>=-0.1724)&&(var_dump($lond)<=-78.4762 && var_dump($lond)>=-78.4782)){
+   $varlt = $latd;
+   $varlt = (double) $varlt;
+   $varlg = $lond;
+   $varlg = (double) $varlg;
+   if(($varlt<=-0.17062 && $varlt>=-0.1724) && ($varlg<=-78.4762 && $varlg>=-78.4782)){
    guardarDatos($codigoqr,$stog,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
    }else{
-    echo'<script> alert("Es posible que- '.$variable.' -no este dentro - '.var_dump($lond).' - del establecimiento")</script>';
+    echo'<script> alert("Es posible que- '.$varlt.' -no este dentro - '.$varlg.' - del establecimiento")</script>';
    }
 
    $fh = fopen('archivo.txt', "w") or die("Error al crear");
