@@ -44,12 +44,12 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
     <div id="main">
         <div id="box1">
             <div id="inputs">
-
+		    <h1 name="dataNombre" id="dataNombre">ASISTO</h1>
 <!--                 <input name="dataNombre" type="text" placeholder="Nombre" id="dataNombre" value="" required="required" /> -->
-                <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value="" required="required" />
-                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" />
+<!--                 <input name="dataUsuario" type="text" placeholder="Usuario" id="dataUsuario" value="" required="required" />
+                <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" /> -->
 <!--                 <input name="dataNaci" type="text" placeholder="Fecha " id="dataNaci" value="" required="required" /> -->
-                <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" />
+<!--                 <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" /> -->
                 <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
                 
                 <div id="qrb">
