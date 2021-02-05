@@ -225,7 +225,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	}
 	   }else{
 	      echo'<script> alert("Acceso no permitido")</script>';
-		   header('Location: https://asisto.herokuapp.com/iniciosesion.php');
+		echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 	   }
 	?>
 	
