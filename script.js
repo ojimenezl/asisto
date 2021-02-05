@@ -92,12 +92,12 @@ function showError(error){
 
     function makeCode() {
 //         var inputNombre = document.getElementById('dataNombre');
-        var inputUsuario = document.getElementById('dataUsuario');
-        var inputDepar = document.getElementById('dataDepar');
+//         var inputUsuario = document.getElementById('dataUsuario');
+//         var inputDepar = document.getElementById('dataDepar');
 //         var inputNaci = document.getElementById('dataNaci');
-        var inputCedula = document.getElementById('dataCedula');
+//         var inputCedula = document.getElementById('dataCedula');
 //         input = inputNombre.value + " " + inputUsuario.value + " " + inputDepar.value + " " + inputNaci.value + " " + inputCedula.value;
-         input = inputUsuario.value + " " + inputDepar.value + " " + inputCedula.value;
+         input = "https://asisto.herokuapp.com/";
 
         qrcode.makeCode(input);
     }
