@@ -46,7 +46,7 @@ session_destroy();
   </footer>
      <script type="text/javascript">
   var userid = document.getElementById("email");
-         userid.value = "oscarj-456@hotmail.";
+//          userid.value = "oscarj-456@hotmail.";
         localStorage.removeItem('user');
         localStorage.setItem('user',userid);
         console.log("holaaaaaa88"+userid);
