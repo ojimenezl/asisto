@@ -3,6 +3,7 @@ $(window, document, undefined).ready(function() {
    
 
     $('input').blur(function() {
+      console.log("holaajjjj"+document.getElementById("email").value);
       var $this = $(this);
       if ($this.val())
         $this.addClass('used');
