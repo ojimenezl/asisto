@@ -79,7 +79,7 @@ if($connect!=null ){
    settype($latd, 'float'); 
    settype($lond, 'float'); 
    
-   $variable = "23.09877";
+   $variable = "-23.09877";
    $variable = (double) $variable;
    if((var_dump($latd)<=-0.17062 && var_dump($latd)>=-0.1724)&&(var_dump($lond)<=-78.4762 && var_dump($lond)>=-78.4782)){
    guardarDatos($codigoqr,$stog,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
