@@ -50,7 +50,7 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
                 <input name="dataDepar" type="text" placeholder="Departamento" id="dataDepar" value="" required="required" /> -->
 <!--                 <input name="dataNaci" type="text" placeholder="Fecha " id="dataNaci" value="" required="required" /> -->
 <!--                 <input name="dataCedula" type="text" placeholder="Cedula" id="dataCedula" value="" required="required" /> -->
-                <div id="msg">Generaremos tu còdigo QR. Recuerda que es personal.</div>
+                <div id="msg">De clic en el botón QR ,se generará un código y podra ingresar a la página por medio de su celular.</div>
                 
                 <div id="qrb">
 		<button name="qrButton" id="qrButton" id>QR</button>
