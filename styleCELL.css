@@ -26,7 +26,7 @@
         left: 0px;
     }
     #inputs{
-        margin-top: 200px;
+        margin-top: -50px;
         width: 50%;
     }
     
@@ -171,7 +171,7 @@
         border-radius: 20px;
         box-shadow: -5px 5px 10px rgba(0, 0, 0, .1);
         position: absolute;
-        right: 100px;
+        right: 490px;
         top: 50%;
         transform: translateY(-50%);
     }
