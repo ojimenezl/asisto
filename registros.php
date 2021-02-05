@@ -1,4 +1,9 @@
-  	<?php
+<script>var Var_JavaScript = 5;    // declaración de la variable </script>    	
+<?php
+            $var_PHP = "<script> document.writeln(Var_JavaScript); </script>"; // igualar el valor de la variable JavaScript a PHP 
+
+             echo $var_PHP   // muestra el resultado 
+
 	   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
 	   if($email!=null && $password!=null){
 	  // Validar la conexión de base de datos.
@@ -46,7 +51,7 @@
 
 	}
 	   }else{
-	      echo'<script> alert("Acceso no permitido")</script>';
+	      echo'<script> alert("Acceso no permitido '.$var_PHP.'")</script>';
 		echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 	   }
 	?>
