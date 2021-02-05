@@ -1,9 +1,5 @@
 $(window, document, undefined).ready(function() {
-    
-        var userid = document.getElementById("email").value;
-        localStorage.removeItem('user');
-        localStorage.setItem('user',userid);
-        console.log("holaaaaaa88"+userid)
+
    
 
     $('input').blur(function() {
