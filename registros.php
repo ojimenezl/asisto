@@ -51,7 +51,7 @@
 
 	}
 	   }else{
-	      echo'<script> alert("Acceso no permitido '.$var_PHP.'")</script>';
+	      echo'<script> alert("Acceso no permitido")</script>';
 		echo '<script> window.location.assign("https://asisto.herokuapp.com"); </script>';
 	   }
 	?>
