@@ -28,7 +28,7 @@ session_destroy();
       <input id="password" name="password" type="password"><span class="highlight"></span><span class="bar"></span>
       <label>Contraseña</label>
     </div>
-    <input type="submit" name="ingresar" value="ingresar" />
+    <button type="submit" name="ingresar" value="ingresar"> Ingresar </button>
     <button type="button" class="button buttonBlue">Ingresar
       <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
