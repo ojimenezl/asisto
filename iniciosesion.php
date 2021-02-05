@@ -31,7 +31,7 @@ session_destroy();
     <button type="submit" name="ingresar" id="ingresar" value="ingresar" lass="button buttonBlue"> Ingresar 
        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div> 
       </button>
-    <button type="button" class="button buttonBlue">Ingresar
+    <button type="submit" name="ingresar" id="ingresar" value="ingresar" class="button buttonBlue">Ingresar
       <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
   </form>
