@@ -39,8 +39,6 @@
 		  echo'<script> alert("NO Ingresada")</script>';
 		}
 
-	    }else{
-	     echo'<script> alert("hola no")</script>';
 	    }
 
 
