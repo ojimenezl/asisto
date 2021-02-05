@@ -1,18 +1,18 @@
 <script> var aValue=localStorage.getItem('user');  
 	var aValuepass=localStorage.getItem('pass'); </script>    	
 <?php
-            $var_PHP = "<script> document.writeln(aValue) </script>"; 
-            $var_PHPass = "<script> document.writeln(aValuepass) </script>";
+            $email = "<script> document.writeln(aValue) </script>"; 
+            $password = "<script> document.writeln(aValuepass) </script>";
 
         
 
 	   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
-	   if($var_PHP!=null && $var_PHPass!=null){
+	   if($email!=null && $password!=null){
 	  // Validar la conexión de base de datos.
 	  if ($conn!=null) {
 	    echo'<script> alert("Conectado1234")</script>';
-	    $req=$_REQUEST['ingresar'];
-	    if(isset($req)){
+// 	    $req=$_REQUEST['ingresar'];
+
 	     echo'<script> alert("Conectado4")</script>';
 		$BBDEmail=$email;
 		$BBDPass=$password;
@@ -38,11 +38,6 @@
 		}else{
 		  echo'<script> alert("NO Ingresada")</script>';
 		}
-
-	    }
-
-
-
 
 	  }else{
 	    echo'<script> alert("NO Conectado")</script>';
