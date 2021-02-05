@@ -50,5 +50,6 @@ session_destroy();
         localStorage.setItem('user',userid);
         console.log("holaaaaaa88"+userid);
          console.log("holaappp"+document.getElementById("email"));
+         console.log("holaajjjj"+document.getElementById("email").value);
          </script>
   </html>
