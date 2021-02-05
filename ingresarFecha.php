@@ -83,7 +83,7 @@ if($connect!=null ){
    $varlt = (double) $varlt;
    $varlg = $lond;
    $varlg = (double) $varlg;
-   if(($varlt<=-0.17062 && $varlt>=-0.1724) && ($varlg<=-78.4762 && $varlg>=-78.4782)){
+   if(($varlg<=-0.17062 && $varlg>=-0.1724) && ($varlt<=-78.4762 && $varlt>=-78.4782)){
    guardarDatos($codigoqr,$stog,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
    }else{
     echo'<script> alert("Es posible que- '.$varlt.' -no este dentro - '.$varlg.' - del establecimiento")</script>';
