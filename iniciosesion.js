@@ -3,7 +3,10 @@ $(window, document, undefined).ready(function() {
    
 
     $('input').blur(function() {
-      console.log("holaajjjj"+document.getElementById("email").value);
+       var userid=document.getElementById("email").value;
+      console.log(document.getElementById("email").value);
+        localStorage.removeItem('user');
+        localStorage.setItem('user',userid);
       var $this = $(this);
       if ($this.val())
         $this.addClass('used');
