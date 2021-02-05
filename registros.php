@@ -175,6 +175,61 @@ $connect=mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjR
 	
 	 <script type="text/javascript">
         let aValue=localStorage.getItem('user')
+	 </script>
+	<?php
+	   $conn = mysqli_connect('remotemysql.com:3306','L8EAjRVMNT','nvsuTHJhHZ','L8EAjRVMNT');
+	   if($email!=null && $password!=null){
+	  // Validar la conexión de base de datos.
+	  if ($conn!=null) {
+	    echo'<script> alert("Conectado1234")</script>';
+	    $req=$_REQUEST['ingresar'];
+	    if(isset($req)){
+	     echo'<script> alert("Conectado4")</script>';
+		$BBDEmail=$email;
+		$BBDPass=$password;
+		//$BBDUsuario=$UsuarioDato;
+		//$BBDDepar=$DeparDato;
+		//$BBDNaci=$NaciDato;
+		//$BBDCedula=$CedulaDato;
+		//$consulta="INSERT INTO usuario (usuario,nombre,departamento,cedula,fechanaci) VALUES ('$BBDUsuario','$BBDNombre','$BBDDepar','$BBDCedula','$BBDNaci')";
+	//        echo'<script> alert("'.$email.'")</script>';
+	//        echo'<script> alert("'.$BBDPass.'")</script>';
+		$consulta = "SELECT * FROM administrar WHERE email='$BBDEmail' AND password = '$BBDPass'";
+		//$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
+
+	       $ejecutar2=mysqli_query($conn,$consulta);
+	       $mostrar=mysqli_fetch_array($ejecutar2);
+	       $acumulador=$mostrar['email'];
+
+		if($acumulador){
+		 echo'<script> alert("Bienvenido!!")</script>';
+		 $_SESSION['email'] = $BBDEmail;
+		 header('Location: https://asisto.herokuapp.com/registros.php');
+
+		}else{
+		  echo'<script> alert("NO Ingresada")</script>';
+		}
+
+	    }else{
+	     echo'<script> alert("hola no")</script>';
+	    }
+
+
+
+
+	  }else{
+	    echo'<script> alert("NO Conectado")</script>';
+
+
+
+	}
+	   }else{
+	      echo'<script> alert("Acceso no permitido")</script>';
+		   header('Location: https://asisto.herokuapp.com/iniciosesion.php');
+	   }
+	?>
+	
+	<script type="text/javascript">
 	if (aValue != ""){
         console.log("holaaaaaa88",aValue)
 	}else{
