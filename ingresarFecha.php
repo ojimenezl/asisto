@@ -78,7 +78,7 @@ if($connect!=null ){
   if($codigoqr!=null && $stog!=null && $lond!=null && $latd!=null){//$NombreDato!=null && $UsuarioDato!=null && $DeparDato!=null && $NaciDato!=null && $CedulaDato!=null){
    settype($latd, 'float'); 
    settype($lond, 'float'); 
-   if(($latd<=-0.17062 && $latd>=-0.1724)&&($lond<=-78.4762 && $lond>=-78.4782)){
+   if((var_dump($latd)<=-0.17062 && var_dump($latd)>=-0.1724)&&(var_dump($lond)<=-78.4762 && var_dump($lond)>=-78.4782)){
    guardarDatos($codigoqr,$stog,$lond,$latd,$req,$connect);//$NombreDato,$UsuarioDato,$DeparDato,$NaciDato,$CedulaDato);
    }else{
     echo'<script> alert("Es posible que no este dentro del establecimiento")</script>';
