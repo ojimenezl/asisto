@@ -56,7 +56,10 @@ include "iniciosesion.php";
 
 }
    }else{
-      echo'<script> alert("Acceso no permitido")</script>';
+      echo'<script>
+      localStorage.removeItem('user');
+      alert("Acceso no permitido")
+      </script>';
    }
 ?>
 
