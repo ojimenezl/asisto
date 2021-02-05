@@ -24,8 +24,8 @@
 	//        echo'<script> alert("'.$email.'")</script>';
 	//        echo'<script> alert("'.$BBDPass.'")</script>';
 		  
-	        $consulta = "SELECT * FROM `administrar` WHERE `email`='oscarj-456@hotmail.com' AND `password` = 'o1234'";
-		//$consulta = "SELECT * FROM `administrar` WHERE `email`='$BBDEmail' AND `password` = '$BBDPass'";
+// 	        $consulta = "SELECT * FROM `administrar` WHERE `email`='oscarj-456@hotmail.com' AND `password` = 'o1234'";
+		$consulta = "SELECT * FROM `administrar` WHERE `email`='$BBDEmail' AND `password` = '$BBDPass'";
 		//$consulta="SELECT * FROM `administrar` WHERE `email`='oscarjjj-456@hotmail.com' and `password`='o1234'";
 
 	       $ejecutar2=mysqli_query($conn,$consulta);
